@@ -1,0 +1,27 @@
+DYNORA V15.8.4
+
+Extract into a fresh folder. Stop the old server and run START_DYNORA.bat.
+Confirm V15.8.4 in the header.
+
+Depth -> Choose regions · live + snap -> Use checkboxes.
+Check one or several regions for green outlines, live patch values and snaps.
+Uncheck a region to keep it saved but hide and exclude it from future captures.
+Region to edit changes edit focus only. It never checks a region automatically.
+Check all / Uncheck all / Only edited region are available below the list.
+Newly added drawings start checked. Replacing/refining keeps its checkbox.
+Every capture freezes its checked set with the RGB/camera acquisition state.
+Stable region IDs, image names, frame IDs and capture times remain in CSV/JSON.
+Snaps use selected boundaries; hidden rear/blocked portions are removed.
+
+Rovers (dock) -> Spawn rover on map. Click the map or type X/Z/yaw, then Spawn
+here. Clear positions are settled and synchronized with contact physics. The
+rover stays paused: use Resume driving or Keyboard drive.
+
+Bridge supports/undersides/barriers and closed tapered speed bumps are updated.
+Fresh recordings and lean exports remain: images, snaps, depth, sensor/action
+CSV, calibration and validation, without optional scene/model/CAD backups/logs.
+
+Depth selections and saved anchors clear on track/layout changes.
+Test Lab shortcuts and the isolated test-lane choice are restored.
+
+See docs/UPDATE_V15_8_3.md for details and sampling/physics limitations.

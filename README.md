@@ -253,5 +253,3 @@ The project's original source code is distributed under the **[MIT License](LICE
 *An evolving research platform; observations and hypotheses should always be tested against measured data.*
 
 </div>
-#   D Y N O R A  
- 

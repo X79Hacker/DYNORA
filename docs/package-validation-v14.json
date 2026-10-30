@@ -1,0 +1,18 @@
+{
+  "version": "14.0.0",
+  "original_asset_hashes_verified": 88,
+  "fresh_asset_restoration": true,
+  "tests_passed": 190,
+  "tests_failed": 0,
+  "production_build": "PASS",
+  "built_html_local_references": "PASS",
+  "software_webgl_dev_smoke": "PASS",
+  "software_webgl_production_smoke": "PASS",
+  "five_live_depth_targets": "PASS",
+  "remove_and_undo": "PASS",
+  "recording_crc_and_manifest_hashes": "PASS",
+  "night_lighting": "PASS (development UI test)",
+  "rtx_laptop_fps": "not measured; FPS target is not a guarantee",
+  "assets_downsampled": false,
+  "asset_storage": "One complete copy in dist; source commands restore public with hash checks"
+}

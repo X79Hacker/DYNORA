@@ -1,0 +1,21 @@
+{
+  "kind": "CPU-only camera query overhead; not GPU FPS",
+  "iterations": 2000,
+  "phase": "one follow/orbit guard plus one mounted-camera guard",
+  "median_ms": 0.011868000000049506,
+  "p95_ms": 0.06348400000024412,
+  "max_ms": 0.942833999999948,
+  "mean_queries": 4.1505,
+  "physics": {
+    "engine": "Rapier 0.21.0 WASM for robot, room furniture and added props",
+    "steps": 240,
+    "terrain": "flat ground",
+    "objects": 20,
+    "static_triangle_meshes": 191,
+    "collision_events": 0,
+    "last_collision": null,
+    "collider": "Added props: selected box, convex hull, or up to 48 connected-island convex hulls; budget fallback to box. Legacy fixed surfaces use their actual triangle geometry; merged fence gaps and rotated surfaces remain open.",
+    "robot": "Reduced-order motor/tyre model coupled to a Rapier base with separate wheel, plate and component hulls; chassis follows terrain pitch and roll; not an articulated-wheel solver",
+    "limitations": "Compound convex or box colliders approximate visible meshes; fixed legacy meshes use triangle contact. Human controllers are kinematic, and track gates use revolute joints. ToF and depth selection use visual triangle geometry."
+  }
+}

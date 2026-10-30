@@ -1,0 +1,61 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> robot-sim-web@13.0.0 build
+> node node_modules/vite/bin/vite.js build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 118 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/showroom.html                                               2.71 kB │ gzip:     1.31 kB
+dist/motion.html                                                 3.60 kB │ gzip:     1.71 kB
+dist/verification.html                                           3.69 kB │ gzip:     1.80 kB
+dist/test-lab.html                                               5.80 kB │ gzip:     2.37 kB
+dist/research.html                                               7.24 kB │ gzip:     2.75 kB
+dist/index.html                                                 12.48 kB │ gzip:     4.58 kB
+dist/assets/part_1__6-BNMcQbIj.stl                              15.18 kB
+dist/assets/part_1__3-Be-LFDD1.stl                              23.28 kB
+dist/assets/part_1__4-n1R1RjoP.stl                              23.28 kB
+dist/assets/part_1__5-DHZhHIFj.stl                              23.28 kB
+dist/assets/tof_sensor-bhQyrNlH.stl                             55.88 kB
+dist/assets/part_1-CDhfgxZs.stl                                 75.08 kB
+dist/assets/part_2__2-Dnb6Wf8O.stl                              75.28 kB
+dist/assets/part_2-egp4uDi6.stl                                135.08 kB
+dist/assets/part_1__7-B7gqqMRR.stl                             147.68 kB
+dist/assets/nema17_17hs19_2004s1_stepperonline-DhiJXgaa.stl    353.48 kB
+dist/assets/physics-test-worker-C4K21EJY.js                  4,886.13 kB
+dist/assets/research-BWmlpaKs.css                                2.89 kB │ gzip:     1.12 kB
+dist/assets/showroom-c5XHvewP.css                                3.92 kB │ gzip:     1.35 kB
+dist/assets/testlab-CKzkCWMX.css                                 8.56 kB │ gzip:     2.61 kB
+dist/assets/main-D8GxA3P6.css                                   27.85 kB │ gzip:     7.05 kB
+dist/assets/modulepreload-polyfill-B5Qt9EMX.js                   0.71 kB │ gzip:     0.40 kB
+dist/assets/preload-helper-C1FmrZbK.js                           1.14 kB │ gzip:     0.68 kB
+dist/assets/track-surface-DWH8u7SI.js                            2.85 kB │ gzip:     1.41 kB
+dist/assets/motion-7xMpwA3r.js                                   3.59 kB │ gzip:     1.84 kB
+dist/assets/verification-D59Dg-Oh.js                             3.98 kB │ gzip:     2.04 kB
+dist/assets/main-kfSEuIjO.js                                     4.23 kB │ gzip:     1.92 kB
+dist/assets/lab-view-3d-CqssSQhv.js                              4.62 kB │ gzip:     2.20 kB
+dist/assets/showroom-c-4W1a1z.js                                 4.87 kB │ gzip:     2.37 kB
+dist/assets/human-actions-zw-ZilLD.js                           10.57 kB │ gzip:     4.25 kB
+dist/assets/OrbitControls-D0gQVZjk.js                           10.94 kB │ gzip:     3.02 kB
+dist/assets/curtains-BJQbB5rA.js                                12.40 kB │ gzip:     5.58 kB
+dist/assets/research-CzIw-U03.js                                15.75 kB │ gzip:     6.24 kB
+dist/assets/lab-core-B9UodcRI.js                                23.81 kB │ gzip:    10.42 kB
+dist/assets/testlab-CqgIaAiG.js                                 28.27 kB │ gzip:    11.66 kB
+dist/assets/visual-models-BcwXzloZ.js                           33.60 kB │ gzip:    12.14 kB
+dist/assets/visual-core-CkT8F0D3.js                             40.45 kB │ gzip:    12.74 kB
+dist/assets/realistic-human-C4ZhtoVZ.js                         53.37 kB │ gzip:    17.80 kB
+dist/assets/canteen-bMr9qNn4.js                                 56.81 kB │ gzip:    23.92 kB
+dist/assets/main-D_efYz2n.js                                    58.85 kB │ gzip:    24.66 kB
+dist/assets/robot-model-COxYbkUy.js                             70.90 kB │ gzip:    11.63 kB
+dist/assets/jszip.min-CwTARaZj.js                               97.60 kB │ gzip:    30.32 kB
+dist/assets/track-CGp5K92D.js                                  107.45 kB │ gzip:    43.63 kB
+dist/assets/three.module-Biv1M9qq.js                           535.01 kB │ gzip:   136.07 kB
+dist/assets/weights-UO4ngZFe.js                              4,586.35 kB │ gzip: 1,739.64 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 5.04s

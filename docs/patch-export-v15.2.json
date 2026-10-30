@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "environment": "Headless software WebGL; functional tests, not laptop GPU FPS",
+  "checks": [
+    "Apartment production app measures and downloads only IDs 80–119, with 360 attempted rays",
+    "Stop recording produces a verified ZIP and visible retained download link"
+  ],
+  "errors": [],
+  "rover_motion": [],
+  "patch_status": "40 / 256 selected · 360 sample positions / update\nSnapshot · batch 1 · simulation 1.300 s\n360 rays · 360 valid · 1632 ms batch latency\none completed batch · latest completed 0.0 s ago",
+  "recording_status": "ZIP verified · quality PASS_WITH_WARNINGS · 5 rows / 1 images. Download ZIP below. Saved for recovery after reload.",
+  "recording_bytes": 46625169
+}

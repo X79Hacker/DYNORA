@@ -1,0 +1,79 @@
+{
+  "zip_bytes": 89748044,
+  "crc_verified": true,
+  "manifest_hashes_verified": 25,
+  "images_decoded": [
+    {
+      "name": "images/apartment_mvq4cdv7_1_img_000000.png",
+      "width": 640,
+      "height": 480
+    }
+  ],
+  "telemetry_rows": 3,
+  "quality_pass": true,
+  "quality_status": "PASS_WITH_WARNINGS",
+  "image_camera_metadata": {
+    "images/apartment_mvq4cdv7_1_img_000000.png": {
+      "width": 640,
+      "height": 480,
+      "fx": 342.75552161810754,
+      "fy": 342.75552161810754,
+      "cx": 320,
+      "cy": 240,
+      "distortion_model": "plumb_bob",
+      "D": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "K": [
+        342.75552161810754,
+        0,
+        320,
+        0,
+        342.75552161810754,
+        240,
+        0,
+        0,
+        1
+      ],
+      "frame_id": "camera_optical",
+      "optical_axes": "x right, y down, z forward",
+      "mount_body_xyz_m": [
+        0.133,
+        1.1102230246251565e-16,
+        0.1725894
+      ],
+      "mount_yaw_pitch_roll_deg": [
+        0,
+        0,
+        0
+      ],
+      "clearance": {
+        "configured_body_xyz_m": [
+          0.133,
+          0,
+          0.1725894
+        ],
+        "effective_body_xyz_m": [
+          0.133,
+          1.1102230246251565e-16,
+          0.1725894
+        ],
+        "clearance_adjusted": false,
+        "near_m": 0.0015,
+        "clearance_radius_m": 0.004250639060792684
+      }
+    }
+  },
+  "files": 30,
+  "quality_warnings": [
+    {
+      "code": "invalid_tof",
+      "message": "1 ToF values marked unavailable/dropout/out of range"
+    }
+  ],
+  "software_version": "14.1.0"
+}

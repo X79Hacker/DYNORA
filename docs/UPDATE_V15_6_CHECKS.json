@@ -1,0 +1,118 @@
+{
+  "version": "15.6.0",
+  "base": "User-attached DYNORA-V15.4.zip",
+  "focused_unit_tests": {
+    "passed": 33,
+    "failed": 0,
+    "full_approved_suite_repeated": false
+  },
+  "browser": {
+    "errors": [],
+    "stats": {
+      "frames": 221,
+      "feed_checks": 21,
+      "feed_black": 0
+    },
+    "recorded": 4,
+    "standalone": 1,
+    "far_segments": 1600,
+    "near_segments": 4444,
+    "latest_polygon": [
+      [
+        0.5999999724446247,
+        0.3000000091851251
+      ],
+      [
+        0.8200000220443002,
+        0.3000000091851251
+      ],
+      [
+        0.8200000220443002,
+        0.72000000367405
+      ],
+      [
+        0.5999999724446247,
+        0.72000000367405
+      ]
+    ],
+    "latest_revision": 9,
+    "review_escape": "pass"
+  },
+  "pixel_checks": [
+    {
+      "image": "images/knot_far.png",
+      "status": "complete",
+      "size": [
+        640,
+        480
+      ],
+      "fraction_within_2px_of_rgb_silhouette": 1.0
+    },
+    {
+      "image": "images/knot_frozen.png",
+      "status": "complete",
+      "size": [
+        640,
+        480
+      ],
+      "fraction_within_2px_of_rgb_silhouette": 1.0
+    },
+    {
+      "image": "images/knot_near.png",
+      "status": "complete",
+      "size": [
+        640,
+        480
+      ],
+      "frame_border_line_fraction": 0.006696428571428571
+    },
+    {
+      "image": "images/knot_occluded.png",
+      "status": "empty_visible_region",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "snapshot_latest_rectangle": "pass",
+      "fraction_within_2px_of_rgb_silhouette": 1.0,
+      "crc_and_all_hashes": "pass"
+    }
+  ],
+  "production_snapshot": {
+    "environment": "track",
+    "snapshot_zip": "pass",
+    "verified_link": "pass",
+    "review_close": "pass",
+    "errors": [],
+    "crc_and_all_hashes": "pass",
+    "image_dimensions": [
+      640,
+      480
+    ],
+    "source_frame_index": 28,
+    "capture_sim_s": 1.1999999999999982,
+    "geometry": "surface"
+  },
+  "preservation": {
+    "base_sha256": "3f50044270b0deeb48e4fec18b69d9939aaaa08c133bbaf9fe0e441ce096be70",
+    "protected_source_files": [
+      "src/dynamics.js",
+      "src/physics-test-settings.js",
+      "src/lab-view-2d.js",
+      "src/surface-looks.js"
+    ],
+    "retained_assets": 88,
+    "revised_assets": [
+      "visual/models/delivery-cart.glb",
+      "visual/models/office-chair.glb",
+      "visual/models/rover.glb",
+      "visual/original-models.json"
+    ]
+  },
+  "build": {
+    "status": "pass",
+    "modules": 142
+  }
+}

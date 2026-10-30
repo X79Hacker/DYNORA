@@ -1,0 +1,65 @@
+{
+  "downloads": [
+    {
+      "width": 1280,
+      "height": 900,
+      "layout": {
+        "height": 114.21875,
+        "flexShrink": "0"
+      },
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+      "automatic": true,
+      "manual": true,
+      "restore": true
+    },
+    {
+      "width": 960,
+      "height": 720,
+      "layout": {
+        "height": 114.21875,
+        "flexShrink": "0"
+      },
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+      "automatic": true,
+      "manual": true,
+      "restore": true
+    },
+    {
+      "width": 800,
+      "height": 600,
+      "layout": {
+        "height": 114.21875,
+        "flexShrink": "0"
+      },
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+      "automatic": true,
+      "manual": true,
+      "restore": true
+    }
+  ],
+  "scenes": [
+    {
+      "environment": "apartment",
+      "header": "DYNORA V15.0 · five rovers + research tools",
+      "profile": "utility",
+      "profiles": 5,
+      "testLabLink": "./test-lab.html"
+    },
+    {
+      "environment": "canteen",
+      "header": "DYNORA V15.0 · five rovers + research tools",
+      "profile": "utility",
+      "profiles": 5,
+      "testLabLink": "./test-lab.html"
+    },
+    {
+      "environment": "track",
+      "header": "DYNORA V15.0 · five rovers + research tools",
+      "profile": "utility",
+      "profiles": 5,
+      "testLabLink": "./test-lab.html"
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

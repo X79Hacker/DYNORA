@@ -1,0 +1,37 @@
+{
+  "pass": true,
+  "environment": "Headless software WebGL; functional tests, not laptop GPU FPS",
+  "checks": [
+    "All five rover profiles move through the actual production selector and arrow-key controls",
+    "Apartment production app measures and downloads only IDs 80–119, with 360 attempted rays",
+    "Stop recording produces a verified ZIP and visible retained download link",
+    "canteen production scene measures exactly eight selected patches",
+    "track production scene measures exactly eight selected patches"
+  ],
+  "errors": [],
+  "rover_motion": [
+    {
+      "profile": "scout",
+      "speed_mps": 0.04
+    },
+    {
+      "profile": "carrier",
+      "speed_mps": 0.131
+    },
+    {
+      "profile": "courier",
+      "speed_mps": 0.206
+    },
+    {
+      "profile": "utility",
+      "speed_mps": 0.332
+    },
+    {
+      "profile": "research",
+      "speed_mps": 0.299
+    }
+  ],
+  "patch_status": "40 / 256 selected · 360 sample positions / update\nSnapshot · batch 1 · simulation 6.608 s\n360 rays · 360 valid · 929 ms batch latency\none completed batch · latest completed 0.0 s ago",
+  "recording_status": "ZIP verified · quality PASS_WITH_WARNINGS · 15 rows / 1 images. Download ZIP below. Saved for recovery after reload.",
+  "recording_bytes": 46596632
+}

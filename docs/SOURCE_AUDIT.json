@@ -1,0 +1,81 @@
+[
+  {
+    "file": "robot.urdf",
+    "links": 5,
+    "joints": 4,
+    "mass_kg": 2.2979700000000003,
+    "mesh_files": [
+      "base.stl",
+      "nema17_17hs19_2004s1_stepperonline.stl",
+      "part_1.stl",
+      "part_1__2.stl",
+      "part_1__3.stl",
+      "part_1__4.stl",
+      "part_1__5.stl",
+      "part_2.stl",
+      "part_2__2.stl"
+    ],
+    "missing_meshes": [],
+    "wheel_joints": {
+      "right_back": {
+        "xyz": "-0.0568087 0.138096 -0.0965578",
+        "rpy": "1.5708 6.5707e-09 1.5708"
+      },
+      "right_front": {
+        "xyz": "-0.0557587 -0.11466 -0.0944578",
+        "rpy": "1.5708 6.5707e-09 1.5708"
+      },
+      "left_front": {
+        "xyz": "0.208691 -0.113304 -0.0965578",
+        "rpy": "1.5708 6.5707e-09 1.5708"
+      },
+      "left_back": {
+        "xyz": "0.208691 0.138096 -0.0966459",
+        "rpy": "1.5708 6.5707e-09 1.5708"
+      }
+    }
+  },
+  {
+    "file": "my_bot.urdf",
+    "links": 34,
+    "joints": 33,
+    "mass_kg": 3.9982252799999998,
+    "mesh_files": [
+      "aluminium_sheet.stl",
+      "holder.stl",
+      "holder1.stl",
+      "johnson_motor.stl",
+      "motor_bracket.stl",
+      "part_1.stl",
+      "part_1__2.stl",
+      "tof_sensor.stl",
+      "wheel.stl"
+    ],
+    "missing_meshes": [
+      "aluminium_sheet.stl",
+      "holder.stl",
+      "holder1.stl",
+      "johnson_motor.stl",
+      "motor_bracket.stl",
+      "wheel.stl"
+    ],
+    "wheel_joints": {
+      "right_front": {
+        "xyz": "0.0730882 -0.125566 -0.0680894",
+        "rpy": "1.5708 -0.00607694 0"
+      },
+      "right_back": {
+        "xyz": "-0.0779337 -0.125566 -0.0680894",
+        "rpy": "1.5708 0.0650949 0"
+      },
+      "left_front": {
+        "xyz": "0.073088 0.125452 -0.0680894",
+        "rpy": "1.5708 0.0468302 0"
+      },
+      "left_back": {
+        "xyz": "-0.0779334 0.125452 -0.0680894",
+        "rpy": "1.5708 -0.00607694 0"
+      }
+    }
+  }
+]

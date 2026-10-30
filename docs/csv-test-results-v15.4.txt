@@ -1,0 +1,22 @@
+✔ CSV escapes commas, quotes and embedded line breaks (1.152407ms)
+✔ dataset ZIP preserves binary images, physics schema and records (46.197983ms)
+✔ reopened recording ZIP validates every manifest hash and rejects tampered or missing files (32.49027ms)
+✔ record icon and label clicks stop recording before one automatic export; failed export preserves buffers (0.857214ms)
+✔ 2, 3, 4 and arbitrary 1–64 sample counts use exactly that many deterministic in-patch rays (31.276553ms)
+✔ each image keeps its frozen camera/geometry even while the scene and camera move before completion (6.866489ms)
+✔ bounded recording applies backpressure and never reuses another image depth result (2.026532ms)
+✔ timestamp/frame mismatches and thrown samplers are explicit failures and release their query (2.056145ms)
+✔ no selected region is represented by an image index row without fabricated patch depths (1.609184ms)
+✔ recording memory capacity stops acquisition without dropping previously retained files (1.353885ms)
+✔ export validation checks filename, timestamps, display frame IDs and completion status (0.578147ms)
+✔ snapshot alpha visibility freezes opacity and texture transforms at RGB acquisition (1.365402ms)
+✔ deforming mesh buffers are frozen while a later snapshot sees the new surface (1.461104ms)
+✔ image-linked CSV preserves commas, quotes and line breaks in imported part labels (1.66102ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 273.790425

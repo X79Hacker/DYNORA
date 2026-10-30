@@ -1,0 +1,58 @@
+{
+  "zip_bytes": 64114441,
+  "crc_verified": true,
+  "manifest_hashes_verified": 41,
+  "software_version": "15.0.0",
+  "rover_profile": "utility",
+  "frames": [
+    {
+      "image": "images/apartment_mvqbq6ce_1_img_000000.png",
+      "shape": [
+        480,
+        640
+      ],
+      "finite_pixels": 118063,
+      "min_z_m": 0.38669323921203613,
+      "max_z_m": 6.595925331115723,
+      "distinct_instance_ids": 19,
+      "radial_reconstruction_verified": true
+    },
+    {
+      "image": "images/apartment_mvqbq6ce_1_img_000001.png",
+      "shape": [
+        480,
+        640
+      ],
+      "finite_pixels": 118159,
+      "min_z_m": 0.38669323921203613,
+      "max_z_m": 6.595925331115723,
+      "distinct_instance_ids": 19,
+      "radial_reconstruction_verified": true
+    },
+    {
+      "image": "images/apartment_mvqbq6ce_1_img_000002.png",
+      "shape": [
+        480,
+        640
+      ],
+      "finite_pixels": 118051,
+      "min_z_m": 0.38669323921203613,
+      "max_z_m": 6.595925331115723,
+      "distinct_instance_ids": 19,
+      "radial_reconstruction_verified": true
+    }
+  ],
+  "labels": {
+    "enabled": true,
+    "frames": 3,
+    "dropped_frames": 0,
+    "bytes": 11063734,
+    "cap_bytes": 100663296,
+    "errors": [],
+    "format": "NumPy v1: float32 metric optical-Z (NaN background), uint32 instance ID (0 background), optional float32 radial range",
+    "limits": "First geometric triangle surface, including transparent surfaces. Alpha cutouts are not evaluated. No labels for distorted, frame-blended or injected frozen RGB frames."
+  },
+  "quality_status": "PASS_WITH_WARNINGS",
+  "decoded_images": 3,
+  "all_checks_passed": true
+}

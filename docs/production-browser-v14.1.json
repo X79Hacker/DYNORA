@@ -1,0 +1,20 @@
+{
+  "profile_ack": "Applied to apartment: Robot calibration, selected surface and brake applied. Ride response saved for the obstacle track.",
+  "profile_persists": true,
+  "terrain_ack": "Applied to obstacle track: Isolated track rebuilt with this terrain. Rover is paused at the start.",
+  "terrain": {
+    "track": "bench",
+    "hole_depth_cm": "5.5",
+    "paused": true
+  },
+  "ready": true,
+  "version": "14.1.0",
+  "live_targets": 5,
+  "model_remove_undo": {
+    "removed": true,
+    "restored": true
+  },
+  "recording_zip": "robot_dataset_2026-10-27T03-22-18-312Z.zip",
+  "errors": [],
+  "renderer": "Chromium software WebGL (SwiftShader), not RTX hardware FPS"
+}

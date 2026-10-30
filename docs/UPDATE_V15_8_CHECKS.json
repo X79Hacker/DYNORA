@@ -1,0 +1,63 @@
+{
+  "version": "15.8.0",
+  "focused_tests": {
+    "pass": 72,
+    "fail": 0
+  },
+  "contact_terrain_regressions": {
+    "pass": 24,
+    "fail": 0
+  },
+  "multi_region_browser": {
+    "multiple_regions": "pass",
+    "blocked_pot": "no outline or target depth",
+    "stable_ids": "1,2 -> 1,3 -> 1,3",
+    "standalone_snapshot": "pass",
+    "stats": {
+      "frames": 360,
+      "feed_checks": 35,
+      "feed_black": 0
+    },
+    "errors": []
+  },
+  "full_track_browser": {
+    "spawnStatus": "Spawned at X -2.682, Z 2.251 m. Wheels settled; motion cleared. Paused.",
+    "expected_spawn": {
+      "x": -2.682,
+      "z": 2.251
+    },
+    "recording": "ZIP verified \u00b7 quality PASS_WITH_WARNINGS \u00b7 9 rows / 2 images. Download ZIP below. Saved for recovery after reload.",
+    "errors": []
+  },
+  "independent_export_checks": [
+    {
+      "file": "multi-recorded.zip",
+      "frames": 4,
+      "region_rows": 8,
+      "decoded_images": 8,
+      "verified_hashes": 0,
+      "status": "pass"
+    },
+    {
+      "file": "multi-snapshot.zip",
+      "frames": 1,
+      "region_rows": 2,
+      "decoded_images": 2,
+      "verified_hashes": 11,
+      "status": "pass"
+    },
+    {
+      "file": "track-spawn-recording.zip",
+      "frames": 2,
+      "region_rows": 4,
+      "decoded_images": 4,
+      "verified_hashes": 39,
+      "status": "pass"
+    }
+  ],
+  "limits": [
+    "Browser exercised a software WebGL renderer; this is not a hardware FPS benchmark.",
+    "Boundary visibility uses sampled rays with refined transitions, not exact pixel segmentation.",
+    "Reduced-order wheel/terrain dynamics remain; no hardware validation claimed."
+  ]
+}

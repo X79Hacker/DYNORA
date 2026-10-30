@@ -1,0 +1,40 @@
+{
+  "pass": true,
+  "checks": [
+    "Opens in Rectangle mode with a clear camera image, no grid and zero region queries",
+    "Rectangle keeps its curved surface attachment and gets a clipped heatmap plus dotted boundaries",
+    "Patch filtering happens after shape selection and preserves the target mask",
+    "Downloaded training CSV contains only requested global IDs and exact source-pixel bounds",
+    "Window resizing scales the image without changing patch IDs, pixel bounds or selection",
+    "Concave Polygon selection remains available and measures its selected surface",
+    "Object selection follows the visible part, updates its depth after camera motion, and freezes when Live is turned off",
+    "Occluded objects report unavailable depth and leave no stale heatmap",
+    "Alpha-cutout leaf gets its real visible contour and geometric depth, excluding transparent corners",
+    "Full HD retains a complete 16×16 aligned grid and the original image aspect",
+    "Point mode and saved live-anchor controls remain accessible",
+    "Discover visible parts outlines measurable shapes before selecting a new target",
+    "Explicit full-image selection measures all 256 aligned patches in one batch"
+  ],
+  "errors": [],
+  "console_errors": [],
+  "rectangle_patches": [
+    85,
+    86,
+    87,
+    101,
+    102,
+    103,
+    117,
+    118,
+    119,
+    133,
+    134,
+    135,
+    149,
+    150,
+    151,
+    165,
+    166,
+    167
+  ]
+}

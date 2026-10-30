@@ -1,0 +1,14 @@
+{
+  "version": "14.1.0",
+  "automated_tests": 211,
+  "failures": 0,
+  "original_public_assets_unchanged": 88,
+  "local_built_html_references_checked": 52,
+  "guide_built_and_matches_source": true,
+  "physics_120_hz_and_contact_shapes_unchanged": true,
+  "human_and_depth_implementations_retained": true,
+  "browser_ui_errors": 0,
+  "browser_recording_manifest_hashes_verified": 25,
+  "recording_quality_status": "PASS_WITH_WARNINGS (one simulated ToF dropout is explicitly marked invalid)",
+  "hardware_fps_measured": false
+}

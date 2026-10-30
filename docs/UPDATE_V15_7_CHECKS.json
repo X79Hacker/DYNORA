@@ -1,0 +1,128 @@
+{
+  "version": "15.7.0",
+  "scope": "Focused selection-outline and snapshot checks; unrelated full physics suite not repeated",
+  "unit_tests": {
+    "passed": 49,
+    "failed": 0
+  },
+  "build": "production pass",
+  "browser": {
+    "recorded_pairs": 5,
+    "standalone_pairs": 1,
+    "default_and_migration": "selected dashed boundary",
+    "near_camera_clip": "pass",
+    "latest_selection": "pass",
+    "same_frame_freeze": "pass",
+    "snapshot_download": "pass",
+    "live": {
+      "green": 1047,
+      "aligned": 1047,
+      "ratio": 1,
+      "anchor": "outside_view"
+    },
+    "stats": {
+      "frames": 115,
+      "feed_checks": 11,
+      "feed_black": 0
+    },
+    "errors": []
+  },
+  "production": {
+    "environment": "track",
+    "selected_rectangle": "attached",
+    "snapshot_zip": "pass",
+    "verified_link": "pass",
+    "review_close": "pass",
+    "errors": []
+  },
+  "export_pixel_checks": {
+    "recorded-pairs.zip": {
+      "crc": "pass",
+      "csv_frame_and_time_links": "pass",
+      "pixel_alignment": "pass",
+      "manifest_hashes": "not part of fixture",
+      "pairs": [
+        {
+          "image": "images/floor_far.png",
+          "snap_status": "complete",
+          "outline_pixels": 600,
+          "max_distance_to_selected_border_px": 0.7071223689227831
+        },
+        {
+          "image": "images/floor_frozen.png",
+          "snap_status": "complete",
+          "outline_pixels": 600,
+          "max_distance_to_selected_border_px": 0.7071223689227831
+        },
+        {
+          "image": "images/floor_near.png",
+          "snap_status": "complete",
+          "outline_pixels": 525,
+          "max_distance_to_selected_border_px": 0.8549666271898915
+        },
+        {
+          "image": "images/floor_outside.png",
+          "snap_status": "outside_view",
+          "outline_pixels": 0,
+          "max_distance_to_selected_border_px": 0
+        },
+        {
+          "image": "images/pot_only.png",
+          "snap_status": "complete",
+          "outline_pixels": 370,
+          "max_distance_to_selected_border_px": 0.9081617268077955
+        }
+      ]
+    },
+    "snapshot-pair.zip": {
+      "crc": "pass",
+      "csv_frame_and_time_links": "pass",
+      "pixel_alignment": "pass",
+      "manifest_hashes": "pass",
+      "pairs": [
+        {
+          "image": "images/single_1793260643784.png",
+          "snap_status": "complete",
+          "outline_pixels": 525,
+          "max_distance_to_selected_border_px": 0.8549666271898915
+        }
+      ]
+    }
+  },
+  "preservation": {
+    "base_sha256": "8b5b16eea8f62fb12267a939cb375ba7e57eadeadcc3702355ea0e91c33db601",
+    "previous_source_files_retained": true,
+    "static_assets_unchanged": 88,
+    "cad_files_unchanged": 24,
+    "protected_physics_and_models_unchanged": [
+      "src/dynamics.js",
+      "src/physics-test-settings.js",
+      "src/lab-view-2d.js",
+      "src/surface-looks.js",
+      "src/lab-view-3d.js",
+      "src/robot-model.js",
+      "src/visual-models.js",
+      "src/caster-model.js"
+    ],
+    "modified_source_files": [
+      "README.md",
+      "START_HERE.txt",
+      "START_DYNORA.bat",
+      "index.html",
+      "package-lock.json",
+      "package.json",
+      "src/camera-snapshot.js",
+      "src/depth-patch-ui.js",
+      "src/depth-region-core.js",
+      "src/depth-snap-image.js",
+      "src/depth-tool.js",
+      "src/image-depth-recording.js",
+      "src/lab-core.js",
+      "src/surface-selection.js",
+      "tests/depth-snap-object.test.mjs",
+      "tests/image-depth-recording.test.mjs",
+      "tests/snap-contours.test.mjs",
+      "vite.config.js"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+# Optional Cloudflare Pages configuration for your own deployment.
+# Set build command: npm run build ; output directory: dist .
+name = "dynora-simulator"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-10-23"

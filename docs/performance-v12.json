@@ -1,0 +1,73 @@
+{
+  "method": "Sequential warmed CPU benchmark with actual bundled Sam geometry and supplied URDF ToF mounts; not GPU FPS",
+  "v11": {
+    "schema": "dynora-apartment-cpu-12",
+    "note": "Real bundled animated meshes, four supplied-URDF mounts, 36 rays/frame, 2 m sensor range; CPU costs only, not GPU FPS",
+    "sensor_height_m": 0.1419894,
+    "scenarios": {
+      "person_beyond_sensor_range": {
+        "vertices": 65056,
+        "mesh_count": 14,
+        "animate_and_matrices": {
+          "median_ms": 0.7089959999998428,
+          "p95_ms": 4.501054999999951,
+          "frames": 56
+        },
+        "sensor_batch": {
+          "median_ms": 29.885385000000042,
+          "p95_ms": 78.00285800000006,
+          "frames": 56
+        }
+      },
+      "person_within_sensor_range": {
+        "vertices": 65056,
+        "mesh_count": 14,
+        "animate_and_matrices": {
+          "median_ms": 0.5405310000005557,
+          "p95_ms": 1.2242810000007012,
+          "frames": 56
+        },
+        "sensor_batch": {
+          "median_ms": 28.79866800000036,
+          "p95_ms": 44.89240999999947,
+          "frames": 56
+        }
+      }
+    }
+  },
+  "v12": {
+    "schema": "dynora-apartment-cpu-12",
+    "note": "Real bundled animated meshes, four supplied-URDF mounts, 36 rays/frame, 2 m sensor range; CPU costs only, not GPU FPS",
+    "sensor_height_m": 0.1419894,
+    "scenarios": {
+      "person_beyond_sensor_range": {
+        "vertices": 65056,
+        "mesh_count": 14,
+        "animate_and_matrices": {
+          "median_ms": 0.34238600000003316,
+          "p95_ms": 0.8162059999999656,
+          "frames": 56
+        },
+        "sensor_batch": {
+          "median_ms": 0.5179429999999456,
+          "p95_ms": 1.308402000000001,
+          "frames": 56
+        }
+      },
+      "person_within_sensor_range": {
+        "vertices": 65056,
+        "mesh_count": 14,
+        "animate_and_matrices": {
+          "median_ms": 0.2933540000000221,
+          "p95_ms": 0.8730470000000423,
+          "frames": 56
+        },
+        "sensor_batch": {
+          "median_ms": 0.9355940000000373,
+          "p95_ms": 2.370573000000036,
+          "frames": 56
+        }
+      }
+    }
+  }
+}

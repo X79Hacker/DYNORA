@@ -1,0 +1,122 @@
+{
+  "crc": true,
+  "manifest_hashes": 37,
+  "patch_ids": [
+    135,
+    136,
+    137,
+    138,
+    139
+  ],
+  "patch_count": 5,
+  "sample_count": 12,
+  "csv_rows": 5,
+  "per_surface_support_verified": true,
+  "source_pixel_bounds_verified": true,
+  "range_and_z_recomputed_from_camera_geometry": true,
+  "source_frame_index": 97,
+  "capture_image_frame_indices": [
+    123
+  ],
+  "images": [
+    {
+      "path": "images/apartment_mvqxfre1_1_img_000000.png",
+      "size": [
+        640,
+        480
+      ]
+    }
+  ],
+  "quality": {
+    "schema": "dynora-quality-3",
+    "pass": true,
+    "status": "PASS_WITH_WARNINGS",
+    "counts": {
+      "rows": 3,
+      "images": 1,
+      "frames": 3,
+      "runs": 1,
+      "sample_gaps": 0,
+      "invalid_tof": 3
+    },
+    "errors": [],
+    "warnings": [
+      {
+        "code": "invalid_tof",
+        "message": "3 ToF values marked unavailable/dropout/out of range"
+      }
+    ],
+    "image_audit": {
+      "images/apartment_mvqxfre1_1_img_000000.png": {
+        "mean_luma": 145.55822412109413,
+        "std_luma": 50.61929980760147,
+        "dark_fraction": 0,
+        "clipped_fraction": 0,
+        "uniform": false,
+        "samples": 4096,
+        "capture_sim_s": 5.491666666666729,
+        "camera": {
+          "width": 640,
+          "height": 480,
+          "fx": 342.75552161810754,
+          "fy": 342.75552161810754,
+          "cx": 320,
+          "cy": 240,
+          "distortion_model": "plumb_bob",
+          "D": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "K": [
+            342.75552161810754,
+            0,
+            320,
+            0,
+            342.75552161810754,
+            240,
+            0,
+            0,
+            1
+          ],
+          "frame_id": "camera_optical",
+          "optical_axes": "x right, y down, z forward",
+          "mount_body_xyz_m": [
+            0.133,
+            0,
+            0.1725894
+          ],
+          "mount_yaw_pitch_roll_deg": [
+            0,
+            0,
+            0
+          ],
+          "clearance": {
+            "configured_body_xyz_m": [
+              0.133,
+              0,
+              0.1725894
+            ],
+            "effective_body_xyz_m": [
+              0.133,
+              0,
+              0.1725894
+            ],
+            "clearance_adjusted": false,
+            "near_m": 0.0015,
+            "clearance_radius_m": 0.004250639060792684
+          }
+        },
+        "width": 640,
+        "height": 480,
+        "source_frame_index": 123,
+        "camera_frozen": false,
+        "rgb_source_sim_s": 5.491666666666729,
+        "active_fault_ids": [],
+        "bytes": 408959
+      }
+    }
+  }
+}

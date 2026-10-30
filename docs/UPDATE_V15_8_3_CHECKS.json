@@ -1,0 +1,14 @@
+{
+  "version": "15.8.3",
+  "browser": {
+    "version": "15.8.3",
+    "track_switch_clears_regions_and_anchors": "pass",
+    "new_selection_after_switch": "pass",
+    "environment_url_switch": "pass",
+    "new_environment_has_no_old_regions": "pass",
+    "test_lab_shortcuts_restored": "pass",
+    "isolated_lane_choice_and_button_restored": "pass",
+    "rovers_still_available": "pass",
+    "errors": []
+  }
+}

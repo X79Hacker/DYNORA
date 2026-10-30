@@ -1,0 +1,31 @@
+{
+  "schema": "dynora-draw-structure-13",
+  "fixture": "One of each bundled furniture model and a 66-book shelf; not the full apartment",
+  "before": {
+    "draws": 182,
+    "triangles": 125988
+  },
+  "after": {
+    "draws": 113,
+    "triangles": 125988
+  },
+  "batches": {
+    "source_meshes": 71,
+    "submitted_batches": 2,
+    "saved_draws_per_view": 69,
+    "triangles_unchanged": 9792,
+    "rebuilds": 29
+  },
+  "setup_ms": 19.504019,
+  "unchanged_frame_update": {
+    "median_ms": 0.008021999999982654,
+    "p95_ms": 0.01648499999998876,
+    "samples": 120
+  },
+  "full_validation": {
+    "median_ms": 0.8941800000000057,
+    "p95_ms": 3.04904300000004,
+    "samples": 120
+  },
+  "note": "CPU timings and layer-visible mesh submissions only. Does not measure WebGL, shadows, the full app, or laptop FPS."
+}

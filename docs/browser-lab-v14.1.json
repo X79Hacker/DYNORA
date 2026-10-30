@@ -1,0 +1,47 @@
+{
+  "default_mode": "manual",
+  "forward": 0.07447720319032669,
+  "reverse": -0.06624913960695267,
+  "live_tune": {
+    "before": {
+      "t": 0.8999999999999992,
+      "p": [
+        -1.119425654411316,
+        0,
+        0.00041863793740049005
+      ]
+    },
+    "after": {
+      "t": 0.8999999999999992,
+      "p": [
+        -1.119425654411316,
+        0,
+        0.00041863793740049005
+      ],
+      "m": 6.5
+    }
+  },
+  "structural_rejection": "Apply & reset is needed for: robot.radius. Live settings were not changed.",
+  "watchdog": {
+    "forward": 0,
+    "turn": 0,
+    "brake": true
+  },
+  "scripted_seconds": 1.9999999999999953,
+  "balloon_impulse": 0.3660748354716189,
+  "report": {
+    "files": 6,
+    "samples": 7,
+    "hashes_verified": true
+  },
+  "main_ready": true,
+  "profile_ack": "Applied to apartment: Robot calibration, selected surface and brake applied. Ride response saved for the obstacle track.",
+  "contact_ack": "Applied to apartment: Contact mass, friction, restitution and movable / fixed state applied to chair.",
+  "contact": {
+    "mass": 2.3,
+    "friction": 0.25,
+    "restitution": 0.15,
+    "dynamic": true
+  },
+  "errors": []
+}

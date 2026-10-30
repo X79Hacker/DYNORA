@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "path": "docs/TEST_LAB_V11.md",
+      "bytes": 14887,
+      "sha256": "2cc181dc9d684bb9208ea4de7cc337376d0e909e67fd72ecfcdc962d6da98440"
+    },
+    {
+      "path": "visual/ASSET_CREDITS.md",
+      "bytes": 1214,
+      "sha256": "a65a65b8d3e7d75f0e6c49fd9e64437a4da6fe60e5a4397d0af28d5d60aea3c2"
+    },
+    {
+      "path": "visual/environment/studio_small_09_1k.hdr",
+      "bytes": 1615248,
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    },
+    {
+      "path": "visual/humans/CREDITS.md",
+      "bytes": 792,
+      "sha256": "8c06e0e9084f1a3692c96e99ea72a8b655122d4d85f539759b1ab7c5793fca25"
+    },
+    {
+      "path": "visual/humans/maya.glb",
+      "bytes": 7435652,
+      "sha256": "dfca43ce48a72f764f72dea446f87db2c5ce849ca78144271db0ed92bb45524d"
+    },
+    {
+      "path": "visual/humans/researcher.glb",
+      "bytes": 5673160,
+      "sha256": "4535082d32c633f7fd9c95b7e38409dbdc349f0bad00104a7aa883d76a8e220d"
+    },
+    {
+      "path": "visual/humans/sam.glb",
+      "bytes": 7417488,
+      "sha256": "b0da9b3ef1add2c579786bdb860e303ec7374bebdb22aaf93f550b8ac2c11eff"
+    },
+    {
+      "path": "visual/humans/sources.json",
+      "bytes": 3157,
+      "sha256": "de8539f7143af85bc7488998c0fca3af018866c1fcd2270071e0e6e63b73f912"
+    },
+    {
+      "path": "visual/materials/fabric/color.jpg",
+      "bytes": 1681447,
+      "sha256": "6388762708722de48cdbdfb4878b9ae6d8012de5948d564006067b629f0b84ef"
+    },
+    {
+      "path": "visual/materials/fabric/normal.jpg",
+      "bytes": 2682952,
+      "sha256": "c9a8f4ff15527af0b226b8a8840405f944c45a32c2e4462864d3b0136827e6e2"
+    },
+    {
+      "path": "visual/materials/fabric/roughness.jpg",
+      "bytes": 866950,
+      "sha256": "221bf708cb614b01ae83b856376fa79fff22dc249d8a397ab0f89dd3b7fe6da6"
+    },
+    {
+      "path": "visual/materials/metal/color.jpg",
+      "bytes": 701900,
+      "sha256": "49493d6ade78ccbbbd270c6a15e4b4c9b1a097e66ddf28a1073de3e85712d9af"
+    },
+    {
+      "path": "visual/materials/metal/metalness.jpg",
+      "bytes": 4257,
+      "sha256": "843102638fa0a5bf897888868877efab8ccdc4cb84a48e57bdb52bfb30f5e714"
+    },
+    {
+      "path": "visual/materials/metal/normal.jpg",
+      "bytes": 341948,
+      "sha256": "8537c1015de5cc33d20231e5b6aa27309edcb983e1c37e608d08bb00f733747d"
+    },
+    {
+      "path": "visual/materials/metal/roughness.jpg",
+      "bytes": 404875,
+      "sha256": "55d3eee2b69008ad3701b18977495531d0e3515105102e56f40a4d1098d10bce"
+    },
+    {
+      "path": "visual/materials/plaster/color.jpg",
+      "bytes": 378542,
+      "sha256": "ed8a69a6437de9d41d2cf380f7e6a216232fc4754f256c3405985c857547ffef"
+    },
+    {
+      "path": "visual/materials/plaster/normal.jpg",
+      "bytes": 1115299,
+      "sha256": "1bef1887c10e1ce104be1a557e4dbd7634ef6d5ece6e3b4237dab2d0962f57fa"
+    },
+    {
+      "path": "visual/materials/plaster/roughness.jpg",
+      "bytes": 193304,
+      "sha256": "a83ecc2ba5b9d80bb9a27381f3389ccdb20c77ef6358b92f3d11455403d651d8"
+    },
+    {
+      "path": "visual/materials/tile/color.jpg",
+      "bytes": 271201,
+      "sha256": "09bc9cf6e08dc4a58df668df0f2cb30fea54eee48ece77263419222497a05d66"
+    },
+    {
+      "path": "visual/materials/tile/normal.jpg",
+      "bytes": 560108,
+      "sha256": "9056b78a5e9d6021d54783a4674caadc0647abf43d6ef056d61afea0c31a0915"
+    },
+    {
+      "path": "visual/materials/tile/roughness.jpg",
+      "bytes": 208620,
+      "sha256": "24b5813de52fc167c6dcefcaf45ee1097c3323f10c3196a547df0ac9cd6b7fbd"
+    },
+    {
+      "path": "visual/materials/wood/color.jpg",
+      "bytes": 1047153,
+      "sha256": "ffbe4de8765619f278c5f819cd751e003808fa671eb99603abdf82b94ca85e9a"
+    },
+    {
+      "path": "visual/materials/wood/normal.jpg",
+      "bytes": 784277,
+      "sha256": "5b026049b8a2d84c5b135d0880563dcd555c5cdcac71d0101ee47cedc562022e"
+    },
+    {
+      "path": "visual/materials/wood/roughness.jpg",
+      "bytes": 455503,
+      "sha256": "967f0339ee6762fc0a40b222ed9801a37c626090f236f51b294878845ed38559"
+    },
+    {
+      "path": "visual/materials.json",
+      "bytes": 4720,
+      "sha256": "a70a1b344f0e17805375f06ac95487667de9cb1247ee07e6cd6c14d1bb1c523e"
+    },
+    {
+      "path": "visual/models/armchair.glb",
+      "bytes": 231020,
+      "sha256": "64bd3e3130b641d111918c27dc3b86883885094ae1c2c76793d2eaeeff2c60ad"
+    },
+    {
+      "path": "visual/models/bar-stool.glb",
+      "bytes": 240168,
+      "sha256": "6ae2f752e2197ef132cae531bcabf178f85cee0fabb013ce6219f29d5b3d25bd"
+    },
+    {
+      "path": "visual/models/bathroom-vanity.glb",
+      "bytes": 404512,
+      "sha256": "cc0860fe7a43134c1bb736077bedde92676b5dfdf030d0af9b59f16881529090"
+    },
+    {
+      "path": "visual/models/bookcase.glb",
+      "bytes": 1602988,
+      "sha256": "9bbec5b8fabf587b62fff1eb6d535ba6c9a75b9faf2cd5fbe197acf94b0dda1b"
+    },
+    {
+      "path": "visual/models/coat-rack.glb",
+      "bytes": 422180,
+      "sha256": "ad652dc65ac7e4b3c8367b65f2b7b1062a1dce74f1fe64c1757e3a070b1a588d"
+    },
+    {
+      "path": "visual/models/coffee-table.glb",
+      "bytes": 152216,
+      "sha256": "0a066c989b86dd595accae9f53e4ffda6cc42d8cddceff6703a5b18eeb6db05b"
+    },
+    {
+      "path": "visual/models/crate.glb",
+      "bytes": 491080,
+      "sha256": "34bc016b64a05ea0472d7389205de7ab05695002e7246dc06eeb85c654df4f46"
+    },
+    {
+      "path": "visual/models/delivery-cart.glb",
+      "bytes": 354212,
+      "sha256": "88f4dcbf68e818c6b404ae18501c89009c6f0c76dcb438781b40b9e3e097a2b1"
+    },
+    {
+      "path": "visual/models/dining-chair.glb",
+      "bytes": 288584,
+      "sha256": "7c2cde8a4f42f1d5ba4d287e78f7a6ff9b9d8af628490b9ac3172f674e357489"
+    },
+    {
+      "path": "visual/models/dining-table.glb",
+      "bytes": 261648,
+      "sha256": "ccaee83c8de182c4d1e24d9f93c807a56b4d6b3f2bc92bc16cd03d56d165161f"
+    },
+    {
+      "path": "visual/models/double-bed.glb",
+      "bytes": 1040332,
+      "sha256": "dcf7f8b5b3dff8a0cd4d935786db91d326e960962d1e4e9b5b1975633e8cde2c"
+    },
+    {
+      "path": "visual/models/floor-lamp.glb",
+      "bytes": 239024,
+      "sha256": "aefce0252d243f7bb99a2e28728ad695cec9b55c41aa2a7b5218d50ad64c819a"
+    },
+    {
+      "path": "visual/models/floor-mirror.glb",
+      "bytes": 316716,
+      "sha256": "90a73a63bfe8f15d88e91becb228132648567be5262395d5d6f82d1aa8909529"
+    },
+    {
+      "path": "visual/models/kitchen-counter.glb",
+      "bytes": 441704,
+      "sha256": "89dc53676d7d1b807dc3d1c7cbba5f34e15f49b0738067b140f0ebf875b739e5"
+    },
+    {
+      "path": "visual/models/nightstand.glb",
+      "bytes": 298168,
+      "sha256": "ae38fe51f130c10c52a20be38bfdb0dac7339eba2db2d73d04530ca568cd1e14"
+    },
+    {
+      "path": "visual/models/office-chair.glb",
+      "bytes": 518400,
+      "sha256": "a28c7a38e3227dfe40fc90c4226821d319a82aa683862b512e4fb2e04f287a1b"
+    },
+    {
+      "path": "visual/models/oven-range.glb",
+      "bytes": 805784,
+      "sha256": "e78b88458fd337c553fa5d43fc371107b2d2a8788e783b60b96b3de95fb6d0f6"
+    },
+    {
+      "path": "visual/models/plant.glb",
+      "bytes": 397872,
+      "sha256": "697df898f07e94dbfc220f956d23752b907adade7b6421987ca97b9f3afdcf68"
+    },
+    {
+      "path": "visual/models/radiator.glb",
+      "bytes": 840560,
+      "sha256": "75ebae2aba578298d229897915b037c26f5eb67e960c3842d6cff8644b42a734"
+    },
+    {
+      "path": "visual/models/refrigerator.glb",
+      "bytes": 269292,
+      "sha256": "9a2c54d850ac0baa2513141149ca91ca8ae99e09097701f593b29c22306abea1"
+    },
+    {
+      "path": "visual/models/rover.glb",
+      "bytes": 2599052,
+      "sha256": "a6030c99ac647a48fd354c404d03b4d43ce5df21a05902c1f4be5c47578413fa"
+    },
+    {
+      "path": "visual/models/sideboard.glb",
+      "bytes": 263556,
+      "sha256": "9b802aee7db04e710a141a5c90a964a2194f0cd3ff22221a8c81cf2e822bb3cc"
+    },
+    {
+      "path": "visual/models/sofa.glb",
+      "bytes": 370260,
+      "sha256": "e9be95e69a5815e2954e6c411629178a2bb4108c9c421c8bfe6e385744301026"
+    },
+    {
+      "path": "visual/models/table-lamp.glb",
+      "bytes": 261984,
+      "sha256": "8637f82b124bdb6e2aba7cdb3f4c7d517325478561ec18b304e2a8433d282fb4"
+    },
+    {
+      "path": "visual/models/toilet.glb",
+      "bytes": 264480,
+      "sha256": "50500f0ec72a4998465e8f97b427bb53a1fd7a3f4f3e4718d18552ac193bef4e"
+    },
+    {
+      "path": "visual/models/tv-console.glb",
+      "bytes": 488896,
+      "sha256": "1958ba0076d64551b6ea51b818bbe093e0e9d74c5bb8a461b8f8b708ebebc88e"
+    },
+    {
+      "path": "visual/models/wardrobe.glb",
+      "bytes": 410404,
+      "sha256": "7adff0bed4c2593cc41f728d4d597a2cceedfce95c9598aa052a93caa7e976ef"
+    },
+    {
+      "path": "visual/models/washing-machine.glb",
+      "bytes": 380688,
+      "sha256": "ace7fd47c1463ac04714de9e076c3b69cac56f676caadec90f88107df91f6a30"
+    },
+    {
+      "path": "visual/models/writing-desk.glb",
+      "bytes": 317324,
+      "sha256": "d1389397d653fe22d2b7185d04d79ee30ac0b916eec25ab744e74ac128cc09f2"
+    },
+    {
+      "path": "visual/models.json",
+      "bytes": 15,
+      "sha256": "6e87521d2cf88748a2d0cb81ed5aaf41de2be4b05bf0f6cc619bdc14ade5f5f4"
+    },
+    {
+      "path": "visual/original-models.json",
+      "bytes": 11931,
+      "sha256": "db88abdd03cf9326afd20249d7ae00ad9b6ec60e7120daa0afd263b9fce3763b"
+    },
+    {
+      "path": "visual/previews/armchair.png",
+      "bytes": 22103,
+      "sha256": "845c2594b15c943e38b0fd37ba2682cc8f5d3bbf346b6ad6f25668df37c75bb6"
+    },
+    {
+      "path": "visual/previews/bar-stool.png",
+      "bytes": 19247,
+      "sha256": "45edbed9f83dddfde8e056d5ac6311e49fa2674d43c40ce43dffa536a1790e3a"
+    },
+    {
+      "path": "visual/previews/bathroom-vanity.png",
+      "bytes": 20995,
+      "sha256": "630006d5cc9c385f2cfef3a6445535bb73e8b18cf3f9a241ea7ed143c14a1318"
+    },
+    {
+      "path": "visual/previews/bookcase.png",
+      "bytes": 21850,
+      "sha256": "564b757ac90ada395982b4178d9dcb7dda9c27c3c03679748154ace952f75650"
+    },
+    {
+      "path": "visual/previews/coat-rack.png",
+      "bytes": 18497,
+      "sha256": "d54c3a866c80216da6646d744bdb9d055dc1b9e12dbf9a7cb7179746d6eb2590"
+    },
+    {
+      "path": "visual/previews/coffee-table.png",
+      "bytes": 18209,
+      "sha256": "87e468ce0bae1aafc78ad0b65711a27bb051d013cf7e25ae64a883f69f922a39"
+    },
+    {
+      "path": "visual/previews/crate.png",
+      "bytes": 19761,
+      "sha256": "4e6b8c608d43ae1cfa6995ba36c77f8597d95ede3bca8414481cf4a336fd4cac"
+    },
+    {
+      "path": "visual/previews/delivery-cart.png",
+      "bytes": 18362,
+      "sha256": "3aebb7f9281f190218e59abd9829153f7c8f1d5baedb3313d9c47c87ed6f64ac"
+    },
+    {
+      "path": "visual/previews/dining-chair.png",
+      "bytes": 17882,
+      "sha256": "74e5e4403576d35c8c1de5742fbd49aaee22c991a8a7c446823f5da4ab5d0435"
+    },
+    {
+      "path": "visual/previews/dining-table.png",
+      "bytes": 15065,
+      "sha256": "00147c675ef6a0290a8d478836dded6dff0b430be3e7b713cffd93811e4642e9"
+    },
+    {
+      "path": "visual/previews/double-bed.png",
+      "bytes": 23778,
+      "sha256": "3f16865e756de8948d4d56fc7ac3d2afc30a8d7ef81b608f4623d309cbee2152"
+    },
+    {
+      "path": "visual/previews/floor-lamp.png",
+      "bytes": 14926,
+      "sha256": "d5a6d68ee7d3176ba535581523a1f088cd911f13f11b293104067cd93904db81"
+    },
+    {
+      "path": "visual/previews/floor-mirror.png",
+      "bytes": 16913,
+      "sha256": "7e62e302cba22d548ea6f3cb96aff3ca2b9b344ee72daa7d5e9b3e1ca7ae40db"
+    },
+    {
+      "path": "visual/previews/human-maya.png",
+      "bytes": 36239,
+      "sha256": "7b52e3891c9fb65d0f81b9bdb48133570289ca4f639d77a76bb35e8cc263744f"
+    },
+    {
+      "path": "visual/previews/human-researcher.png",
+      "bytes": 42368,
+      "sha256": "d872129e3c5a19b6e2480aa33a5adeba5ed413a89a59826f5026075e574e7c4a"
+    },
+    {
+      "path": "visual/previews/human-sam.png",
+      "bytes": 28599,
+      "sha256": "28b2e48ef9ab42b2c93c582138debea3a802ffb66562deeafd401ddc08b2dddd"
+    },
+    {
+      "path": "visual/previews/kitchen-counter.png",
+      "bytes": 18464,
+      "sha256": "5d37740399c6aade0224d883133a1252865bfa003cab8c5a316d145c087655e9"
+    },
+    {
+      "path": "visual/previews/nightstand.png",
+      "bytes": 19224,
+      "sha256": "0ad2c46803c06b2922dc57900288ced87b11cba6250ace0cb886656cf979869e"
+    },
+    {
+      "path": "visual/previews/office-chair.png",
+      "bytes": 20354,
+      "sha256": "46b8bfe65a1bc389c94bc2d3f4426a2bbc97c065382b74a1b5d70521d0594b38"
+    },
+    {
+      "path": "visual/previews/oven-range.png",
+      "bytes": 23198,
+      "sha256": "c7f71c0c93c4d15c554048beaa04dbb0f29443fad331dab07ad12b31f3feb462"
+    },
+    {
+      "path": "visual/previews/plant.png",
+      "bytes": 21898,
+      "sha256": "d24d3241c2a389c3625629147ee419289210c2fd3e54f02002ec19025fd26f04"
+    },
+    {
+      "path": "visual/previews/radiator.png",
+      "bytes": 16960,
+      "sha256": "ba7b95e813ca7480bcfba119dd2272af00d09e7251e7c727fe5fa1e1447c1472"
+    },
+    {
+      "path": "visual/previews/refrigerator.png",
+      "bytes": 15941,
+      "sha256": "29a6459c766b012bda2c4426cf272ea6de6b3215fe0ceb783afe69050486a25c"
+    },
+    {
+      "path": "visual/previews/rover.png",
+      "bytes": 37624,
+      "sha256": "6d9a58718cb4663b960cd773937e3a1d0dd32095bdd3eba7bc7b774aacd35bf8"
+    },
+    {
+      "path": "visual/previews/sideboard.png",
+      "bytes": 16887,
+      "sha256": "2cafa76a17c17126e430212bdcbcbf609dba7a80e541a6e948db590a5db71094"
+    },
+    {
+      "path": "visual/previews/sofa.png",
+      "bytes": 25319,
+      "sha256": "8f48edbde3500b73262ebc3ed9a3a451a4f6fbd2acdb7f28eac2ca26efe75aed"
+    },
+    {
+      "path": "visual/previews/table-lamp.png",
+      "bytes": 19878,
+      "sha256": "e32de03d167393106e776ea1dca50466348bbc7c017317acde473f551753242b"
+    },
+    {
+      "path": "visual/previews/toilet.png",
+      "bytes": 20366,
+      "sha256": "bca6eb5045eaaf321a66c4a63081d3664bfcf0dfcb2aaa7487ea6a50f27f7742"
+    },
+    {
+      "path": "visual/previews/tv-console.png",
+      "bytes": 18921,
+      "sha256": "4e3c3c038840d3e3fe3d0149d8c20e8f537afca9be60b872d76917efd8fa6c62"
+    },
+    {
+      "path": "visual/previews/wardrobe.png",
+      "bytes": 14930,
+      "sha256": "ad138e3eed5e31d26990181a09348552477eb5cfe4a56615a4ef854e8597a541"
+    },
+    {
+      "path": "visual/previews/washing-machine.png",
+      "bytes": 19191,
+      "sha256": "7f2532be5ac53a9f04ecd59e8dbd305c1e66931ce7d6998f4831c10a13694d5a"
+    },
+    {
+      "path": "visual/previews/writing-desk.png",
+      "bytes": 16554,
+      "sha256": "e04722882ce6c18a4a101b94c11ee6775c9040f3e67baae7261949c273d317b6"
+    }
+  ]
+}

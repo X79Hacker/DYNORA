@@ -1,0 +1,126 @@
+{
+  "schema": "dynora-evaluation-1",
+  "results": [
+    {
+      "profile": "research",
+      "seed": 1,
+      "test": "surface",
+      "controller": "pursuit",
+      "planner": null,
+      "label": "research / surface / pursuit / seed 1",
+      "status": "success",
+      "goal": {
+        "x": 1.5,
+        "y": 0
+      },
+      "elapsed_s": 37.59999999999851,
+      "path_length_m": 2.850196123123169,
+      "goal_distance_m": 0.14980387687683105,
+      "contact_events": 0,
+      "min_measured_tof_m": null,
+      "estimated_energy_Wh": 0.07562630593386503,
+      "limits": "Simulated contact events are debounced; battery energy and sensors are approximate, not measured hardware results."
+    },
+    {
+      "profile": "research",
+      "seed": 1,
+      "test": "surface",
+      "controller": "astar",
+      "planner": "ok",
+      "label": "research / surface / astar / seed 1",
+      "status": "success",
+      "goal": {
+        "x": 1.5,
+        "y": 0
+      },
+      "elapsed_s": 37.68333333333184,
+      "path_length_m": 2.856082293462943,
+      "goal_distance_m": 0.14999223220763402,
+      "contact_events": 0,
+      "min_measured_tof_m": null,
+      "estimated_energy_Wh": 0.07581314426388466,
+      "limits": "Simulated contact events are debounced; battery energy and sensors are approximate, not measured hardware results."
+    },
+    {
+      "profile": "research",
+      "seed": 1,
+      "test": "obstacle",
+      "controller": "pursuit",
+      "planner": null,
+      "label": "research / obstacle / pursuit / seed 1",
+      "status": "timeout",
+      "goal": {
+        "x": 1.5,
+        "y": 0
+      },
+      "elapsed_s": 59.999999999997236,
+      "path_length_m": 0.9763582944869995,
+      "goal_distance_m": 2.0236417055130005,
+      "contact_events": 0,
+      "min_measured_tof_m": 0.2286369943502359,
+      "estimated_energy_Wh": 0.021869101548520453,
+      "limits": "Simulated contact events are debounced; battery energy and sensors are approximate, not measured hardware results."
+    },
+    {
+      "profile": "research",
+      "seed": 1,
+      "test": "obstacle",
+      "controller": "astar",
+      "planner": "ok",
+      "label": "research / obstacle / astar / seed 1",
+      "status": "success",
+      "goal": {
+        "x": 1.5,
+        "y": 0
+      },
+      "elapsed_s": 37.616666666665175,
+      "path_length_m": 3.0504257601154965,
+      "goal_distance_m": 0.14989833796643712,
+      "contact_events": 0,
+      "min_measured_tof_m": 0.15361213118070738,
+      "estimated_energy_Wh": 0.07679197719214251,
+      "limits": "Simulated contact events are debounced; battery energy and sensors are approximate, not measured hardware results."
+    },
+    {
+      "profile": "research",
+      "seed": 1,
+      "test": "pothole",
+      "controller": "pursuit",
+      "planner": null,
+      "label": "research / pothole / pursuit / seed 1",
+      "status": "timeout",
+      "goal": {
+        "x": 1.5,
+        "y": 0
+      },
+      "elapsed_s": 59.999999999997236,
+      "path_length_m": 1.5572481887228804,
+      "goal_distance_m": 1.4428659954055332,
+      "contact_events": 0,
+      "min_measured_tof_m": null,
+      "estimated_energy_Wh": 0.22809093860083135,
+      "limits": "Simulated contact events are debounced; battery energy and sensors are approximate, not measured hardware results."
+    },
+    {
+      "profile": "research",
+      "seed": 1,
+      "test": "pothole",
+      "controller": "astar",
+      "planner": "ok",
+      "label": "research / pothole / astar / seed 1",
+      "status": "timeout",
+      "goal": {
+        "x": 1.5,
+        "y": 0
+      },
+      "elapsed_s": 59.999999999997236,
+      "path_length_m": 1.5569972592950396,
+      "goal_distance_m": 1.4515370673488928,
+      "contact_events": 0,
+      "min_measured_tof_m": null,
+      "estimated_energy_Wh": 0.22789981711483068,
+      "limits": "Simulated contact events are debounced; battery energy and sensors are approximate, not measured hardware results."
+    }
+  ],
+  "limits": "Isolated 8 × 3 m Rapier testbed. Known-map A* versus direct pursuit, shared profiles, surfaces and deterministic range noise. No apartment benchmark or trained model comparison."
+}

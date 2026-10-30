@@ -1,0 +1,5 @@
+{
+  "node": "v24.22.1",
+  "python": "3.12.14",
+  "browser": "Headless Chromium, SwiftShader software WebGL; no RTX GPU FPS measurement"
+}

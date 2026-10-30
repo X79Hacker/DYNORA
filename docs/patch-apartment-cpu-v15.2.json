@@ -1,0 +1,96 @@
+{
+  "kind": "CPU-only apartment geometry benchmark",
+  "note": "Original room geometry and bundled posed humans. No GPU, DOM or frame-rate estimate. Browser measurements yield between chunks; these CPU totals intentionally do not.",
+  "results": [
+    {
+      "selected": 20,
+      "iteration": 0,
+      "snapshot_ms": 13.416344999999978,
+      "sampling_ms": 32.003719000000046,
+      "ray_ms": 29.42995699999915,
+      "rays": 180,
+      "valid": 180,
+      "skin_bakes": 0
+    },
+    {
+      "selected": 20,
+      "iteration": 1,
+      "snapshot_ms": 5.319308000000092,
+      "sampling_ms": 17.140854999999874,
+      "ray_ms": 16.30935799999952,
+      "rays": 180,
+      "valid": 180,
+      "skin_bakes": 0
+    },
+    {
+      "selected": 20,
+      "iteration": 2,
+      "snapshot_ms": 5.973715999999968,
+      "sampling_ms": 20.91999399999986,
+      "ray_ms": 19.90770599999837,
+      "rays": 180,
+      "valid": 180,
+      "skin_bakes": 0
+    },
+    {
+      "selected": 40,
+      "iteration": 0,
+      "snapshot_ms": 5.120554000000084,
+      "sampling_ms": 15.737063000000035,
+      "ray_ms": 15.033227999997962,
+      "rays": 360,
+      "valid": 360,
+      "skin_bakes": 0
+    },
+    {
+      "selected": 40,
+      "iteration": 1,
+      "snapshot_ms": 4.103239999999914,
+      "sampling_ms": 21.300351999999975,
+      "ray_ms": 20.145247999997764,
+      "rays": 360,
+      "valid": 360,
+      "skin_bakes": 0
+    },
+    {
+      "selected": 40,
+      "iteration": 2,
+      "snapshot_ms": 4.726842000000033,
+      "sampling_ms": 16.484934000000067,
+      "ray_ms": 15.688672999997152,
+      "rays": 360,
+      "valid": 360,
+      "skin_bakes": 0
+    },
+    {
+      "selected": 256,
+      "iteration": 0,
+      "snapshot_ms": 4.553806000000122,
+      "sampling_ms": 69.47033899999997,
+      "ray_ms": 65.21409700000027,
+      "rays": 2304,
+      "valid": 2189,
+      "skin_bakes": 0
+    },
+    {
+      "selected": 256,
+      "iteration": 1,
+      "snapshot_ms": 4.571542000000136,
+      "sampling_ms": 61.60404299999982,
+      "ray_ms": 57.61557900000571,
+      "rays": 2304,
+      "valid": 2189,
+      "skin_bakes": 0
+    },
+    {
+      "selected": 256,
+      "iteration": 2,
+      "snapshot_ms": 3.88045000000011,
+      "sampling_ms": 61.04122000000007,
+      "ray_ms": 55.12660200000073,
+      "rays": 2304,
+      "valid": 2189,
+      "skin_bakes": 0
+    }
+  ]
+}

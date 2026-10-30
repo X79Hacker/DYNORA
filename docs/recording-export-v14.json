@@ -1,0 +1,14 @@
+{
+  "recording_quality": "PASS",
+  "telemetry_rows": 3,
+  "images_decoded": 1,
+  "image_dimensions": [
+    [
+      640,
+      480
+    ]
+  ],
+  "manifest_hashes_verified": 25,
+  "crc_ok": true,
+  "software_version": "14.0.0"
+}

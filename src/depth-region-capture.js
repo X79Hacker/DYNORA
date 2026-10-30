@@ -1,0 +1,18 @@
+import {projectSelectionOutline} from './depth-selection-outline.js';
+import {visibleSelectionOutline} from './depth-visibility.js';
+import {followedRegionTest} from './depth-region-core.js';
+import {regionPatchSelections,samplePatchBatch} from './depth-patch-core.js';
+import {depthStatistics} from './depth-core.js';
+
+export function prepareRegions(query,camera,definitions,grid){return structuredClone(definitions).filter(region=>region.included!==false).map(region=>{const outline=projectSelectionOutline(query,camera,region),polygon=region.kind==='object'||region.follow?outline.coverage_polygon:region.polygon,chosen=polygon?regionPatchSelections(grid,polygon,region.patch_ids?new Set(region.patch_ids):null):[];return{region,outline,polygon,chosen};});}
+export async function sampleRegions(query,camera,grid,prepared,{withDepth=true,mode='9',simTime=0,sourceFrame=0,calibration,cancelled=()=>false,contours=null,onProgress=()=>{}}={}){
+ const readings=[],cache=new Map();
+ for(const item of prepared){const {region,outline,polygon,chosen}=item,visible=await visibleSelectionOutline(query,camera,region,outline,{width:grid.width,height:grid.height,cache,cancelled});
+  const batch=withDepth?await samplePatchBatch(query,camera,grid,chosen,{mode,targetMeshIds:region.mesh_ids||null,acceptHit:followedRegionTest(region),simTime,calibration,cancelled,onProgress}):{patches:[],samples:[],valid_samples:0,attempted_samples:0,sim_time_s:simTime,viewport_px:[grid.width,grid.height]};
+  batch.region_id=region.region_id;batch.region_label=region.label||'Region '+region.region_id;batch.source_frame_index=sourceFrame;batch.region=region;batch.projected_region_polygon=polygon;batch.selection_outline=visible;batch.summary=depthStatistics(batch.samples);batch.snap_contours=contours?await contours(item):visible;batch.status=!withDepth?'disabled':batch.valid_samples?'complete':visible.status==='occluded'?'occluded':'no_target_samples';
+  for(const p of batch.patches){p.region_id=batch.region_id;p.region_label=batch.region_label;}for(const s of batch.samples){s.region_id=batch.region_id;s.region_label=batch.region_label;}readings.push(batch);
+ }
+ const samples=readings.flatMap(r=>r.samples),patches=readings.flatMap(r=>r.patches),paths=readings.flatMap(r=>r.selection_outline.paths),snapPaths=readings.flatMap(r=>r.snap_contours.paths||[]),cells=[...new Set(prepared.flatMap(r=>r.chosen.map(p=>p.id)))];
+ const status=paths.length?'complete':readings.some(r=>r.selection_outline.status==='occluded')?'occluded':readings.length?'outside_view':'no_region';
+ return{schema:'dynora-multi-region-frame-1',sim_time_s:simTime,source_frame_index:sourceFrame,viewport_px:[grid.width,grid.height],source_image_px:[grid.width,grid.height],grid_count:256,grid_rows:grid.rows.map(r=>r.columns),sample_mode:mode,calibration,statistics_are_estimates:true,method:'Regions share one frozen scene and camera; per-target visible-triangle samples',patches,samples,attempted_samples:readings.reduce((n,r)=>n+r.attempted_samples,0),valid_samples:samples.length,region_readings:readings,regions:prepared.map(p=>p.region),region_count:readings.length,selection_outline:{schema:'dynora-selection-outline-collection-1',paths,segments:readings.reduce((n,r)=>n+r.selection_outline.segments,0),status,by_region:readings.map(r=>({region_id:r.region_id,status:r.selection_outline.status,paths:r.selection_outline.paths,visibility:r.selection_outline.visibility}))},snap_contours:{paths:snapPaths,cells,cells_px:cells.map(id=>grid.cells[id-1].pixel_bounds),status:contours?(snapPaths.length?'complete':status):status},summary:depthStatistics(samples)};
+}

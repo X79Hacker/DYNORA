@@ -1,0 +1,110 @@
+{
+  "pass": true,
+  "recordings": [
+    {
+      "environment": "apartment",
+      "images": 5,
+      "image_index_rows": 5,
+      "patch_csv_rows": 33,
+      "raw_samples": 75,
+      "crc": true,
+      "manifest_hashes": 49,
+      "filename_time_frame_links_verified": true,
+      "camera_geometry_depth_recomputed": true,
+      "tof_values_and_ages_verified": true,
+      "camera_displacement_m": 0.43365661826496443,
+      "actual_image_intervals_s": [
+        0.1999999999999993,
+        0.20000000000000728,
+        0.4000000000000199,
+        0.4000000000000199
+      ],
+      "quality_status": "PASS_WITH_WARNINGS",
+      "sync_report": {
+        "schema": "dynora-image-depth-sync-1",
+        "images": 5,
+        "status_counts": {
+          "complete": 5
+        },
+        "pending": 0,
+        "deferred_capture_opportunities": 0,
+        "retained_bytes_estimate": 148201,
+        "limit_bytes": 134217728,
+        "capacity_reached": false,
+        "max_abs_sync_delta_s": 0,
+        "rgb_geometry_mismatch": 0,
+        "policy": "Same frozen scene/camera state as RGB. Delayed measured ToF keeps its acquisition time and age; gt_tof is current simulated geometry. No previous depth is copied into a new image."
+      }
+    },
+    {
+      "environment": "canteen",
+      "images": 5,
+      "image_index_rows": 5,
+      "patch_csv_rows": 25,
+      "raw_samples": 75,
+      "crc": true,
+      "manifest_hashes": 49,
+      "filename_time_frame_links_verified": true,
+      "camera_geometry_depth_recomputed": true,
+      "tof_values_and_ages_verified": true,
+      "camera_displacement_m": 0.33544559003191826,
+      "actual_image_intervals_s": [
+        0.1999999999999993,
+        0.2000000000000024,
+        0.3833333333333524,
+        0.20000000000000995
+      ],
+      "quality_status": "PASS_WITH_WARNINGS",
+      "sync_report": {
+        "schema": "dynora-image-depth-sync-1",
+        "images": 5,
+        "status_counts": {
+          "complete": 5
+        },
+        "pending": 0,
+        "deferred_capture_opportunities": 0,
+        "retained_bytes_estimate": 142441,
+        "limit_bytes": 134217728,
+        "capacity_reached": false,
+        "max_abs_sync_delta_s": 0,
+        "rgb_geometry_mismatch": 0,
+        "policy": "Same frozen scene/camera state as RGB. Delayed measured ToF keeps its acquisition time and age; gt_tof is current simulated geometry. No previous depth is copied into a new image."
+      }
+    },
+    {
+      "environment": "track",
+      "images": 5,
+      "image_index_rows": 5,
+      "patch_csv_rows": 34,
+      "raw_samples": 75,
+      "crc": true,
+      "manifest_hashes": 50,
+      "filename_time_frame_links_verified": true,
+      "camera_geometry_depth_recomputed": true,
+      "tof_values_and_ages_verified": true,
+      "camera_displacement_m": 0.3538544784108729,
+      "actual_image_intervals_s": [
+        0.36666666666666536,
+        0.1999999999999993,
+        0.1999999999999993,
+        0.2333333333333325
+      ],
+      "quality_status": "PASS_WITH_WARNINGS",
+      "sync_report": {
+        "schema": "dynora-image-depth-sync-1",
+        "images": 5,
+        "status_counts": {
+          "complete": 5
+        },
+        "pending": 0,
+        "deferred_capture_opportunities": 0,
+        "retained_bytes_estimate": 149181,
+        "limit_bytes": 134217728,
+        "capacity_reached": false,
+        "max_abs_sync_delta_s": 0,
+        "rgb_geometry_mismatch": 0,
+        "policy": "Same frozen scene/camera state as RGB. Delayed measured ToF keeps its acquisition time and age; gt_tof is current simulated geometry. No previous depth is copied into a new image."
+      }
+    }
+  ]
+}

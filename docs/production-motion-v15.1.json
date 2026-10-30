@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "environment": "apartment",
+      "profile": "scout",
+      "readout": "v 0.299 m/s · yaw 0.0°/s\nSlip L / R 18.5 / 18.5%\nTraction 1.48 / 1.48 N · normal 20.59 N\nWheel loads 4.1 / 4.1 / 6.2 / 6.2 N · FL/FR/RL/RR\nLateral 0.000 m/s · loads supported\nBattery 12.30 V · 1.21 / 1.21 A\nOdometry drift 0.014 m\n120 Hz · 180 steps · dropped 17.683 s"
+    },
+    {
+      "environment": "apartment",
+      "profile": "carrier",
+      "readout": "v 0.131 m/s · yaw 0.0°/s\nSlip L / R 59.6 / 59.6%\nTraction 4.63 / 4.63 N · normal 117.68 N\nWheel loads 27.5 / 27.5 / 31.4 / 31.4 N · FL/FR/RL/RR\nLateral -0.000 m/s · loads supported\nBattery 12.06 V · 2.20 / 2.20 A\nOdometry drift 0.044 m\n120 Hz · 216 steps · dropped 26.516 s"
+    },
+    {
+      "environment": "apartment",
+      "profile": "courier",
+      "readout": "v 0.143 m/s · yaw 0.0°/s\nSlip L / R 55.1 / 55.1%\nTraction 4.13 / 4.13 N · normal 78.45 N\nWheel loads 16.4 / 16.4 / 22.9 / 22.9 N · FL/FR/RL/RR\nLateral -0.000 m/s · loads supported\nBattery 12.18 V · 1.71 / 1.71 A\nOdometry drift 0.030 m\n120 Hz · 252 steps · dropped 33.532 s"
+    },
+    {
+      "environment": "apartment",
+      "profile": "utility",
+      "readout": "v 0.159 m/s · yaw 0.0°/s\nSlip L / R 59.9 / 59.9%\nTraction 5.30 / 5.30 N · normal 58.84 N\nWheel loads 11.6 / 11.6 / 17.9 / 17.9 N · FL/FR/RL/RR\nLateral -0.000 m/s · loads supported\nBattery 11.86 V · 3.00 / 3.00 A\nOdometry drift 0.024 m\n120 Hz · 282 steps · dropped 39.198 s"
+    },
+    {
+      "environment": "apartment",
+      "profile": "research",
+      "readout": "v 0.223 m/s · yaw 0.0°/s\nSlip L / R 32.0 / 32.0%\nTraction 2.41 / 2.41 N · normal 39.21 N\nWheel loads 8.1 / 8.1 / 11.5 / 11.5 N · FL/FR/RL/RR\nLateral 0.000 m/s · loads supported\nBattery 12.26 V · 1.37 / 1.37 A\nOdometry drift 0.022 m\n120 Hz · 313 steps · dropped 45.431 s"
+    },
+    {
+      "environment": "canteen",
+      "profile": "scout",
+      "readout": "v 0.228 m/s · yaw 0.0°/s\nSlip L / R 31.3 / 31.3%\nTraction 2.18 / 2.18 N · normal 20.59 N\nWheel loads 3.6 / 3.6 / 6.7 / 6.7 N · FL/FR/RL/RR\nLateral 0.000 m/s · loads supported\nBattery 12.20 V · 1.58 / 1.58 A\nOdometry drift 0.011 m\n120 Hz · 104 steps · dropped 49.731 s"
+    },
+    {
+      "environment": "track",
+      "profile": "scout",
+      "readout": "v 0.391 m/s · yaw 0.0°/s\nSlip L / R 5.9 / 5.9%\nTraction 0.57 / 0.57 N · normal 20.59 N\nWheel loads 4.9 / 4.9 / 5.4 / 5.4 N · FL/FR/RL/RR\nLateral -0.000 m/s · loads supported\nBattery 12.42 V · 0.73 / 0.73 A\nOdometry drift 0.020 m\n120 Hz · 138 steps · dropped 18.166 s"
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

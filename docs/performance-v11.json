@@ -1,0 +1,57 @@
+{
+  "method": "Sequential warmed CPU microbenchmarks on the same host; not full app FPS",
+  "versions": {
+    "v10": {
+      "schema": "dynora-cpu-benchmark-11",
+      "environment_sync": {
+        "median_ms": 0.25922199999996565,
+        "p95_ms": 1.3422759999999698,
+        "calls": 160
+      },
+      "contact_step": {
+        "median_ms": 0.08358499999997093,
+        "p95_ms": 0.4951139999999441,
+        "calls": 800
+      },
+      "live_depth_snapshot_and_point": {
+        "median_ms": 6.333857999999964,
+        "p95_ms": 8.604428999999982,
+        "calls": 70
+      },
+      "depth_point": {
+        "median_ms": 1.1044650000001184,
+        "p95_ms": 2.1984890000001087,
+        "calls": 200
+      },
+      "robot_colliders": 23,
+      "robot_hull_vertices": 2680,
+      "note": "CPU microbenchmarks on this host; does not measure the user GPU or full app FPS"
+    },
+    "v11": {
+      "schema": "dynora-cpu-benchmark-11",
+      "environment_sync": {
+        "median_ms": 0.051840000000026976,
+        "p95_ms": 0.18998799999997118,
+        "calls": 160
+      },
+      "contact_step": {
+        "median_ms": 0.04150600000002669,
+        "p95_ms": 0.23178199999995286,
+        "calls": 800
+      },
+      "live_depth_snapshot_and_point": {
+        "median_ms": 0.071845000000053,
+        "p95_ms": 0.238112000000001,
+        "calls": 70
+      },
+      "depth_point": {
+        "median_ms": 0.008331999999995787,
+        "p95_ms": 0.034534000000007836,
+        "calls": 200
+      },
+      "robot_colliders": 23,
+      "robot_hull_vertices": 2680,
+      "note": "CPU microbenchmarks on this host; does not measure the user GPU or full app FPS"
+    }
+  }
+}

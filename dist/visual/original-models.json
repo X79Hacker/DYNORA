@@ -1,0 +1,480 @@
+{
+  "models": [
+    {
+      "id": "dining-chair",
+      "name": "Moulded dining chair",
+      "dimensions": [
+        0.45,
+        0.92,
+        0.48
+      ],
+      "material": "fabric",
+      "mass": 5,
+      "url": "models/dining-chair.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 2960,
+      "instances": 0
+    },
+    {
+      "id": "office-chair",
+      "name": "Ergonomic office chair",
+      "dimensions": [
+        0.61,
+        1.13,
+        0.61
+      ],
+      "material": "fabric",
+      "mass": 10,
+      "url": "models/office-chair.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 5340,
+      "instances": 0
+    },
+    {
+      "id": "sofa",
+      "name": "Upholstered two-seat sofa",
+      "dimensions": [
+        2.08,
+        0.96,
+        0.9
+      ],
+      "material": "fabric",
+      "mass": 45,
+      "url": "models/sofa.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 5,
+      "triangles": 3800,
+      "instances": 0
+    },
+    {
+      "id": "coffee-table",
+      "name": "Oak coffee table",
+      "dimensions": [
+        1,
+        0.43,
+        0.55
+      ],
+      "material": "wood",
+      "mass": 15,
+      "url": "models/coffee-table.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 2,
+      "triangles": 1560,
+      "instances": 0
+    },
+    {
+      "id": "sideboard",
+      "name": "Oak storage cabinet",
+      "dimensions": [
+        1.2,
+        0.84,
+        0.42
+      ],
+      "material": "wood",
+      "mass": 28,
+      "url": "models/sideboard.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 2,
+      "triangles": 2720,
+      "instances": 0
+    },
+    {
+      "id": "plant",
+      "name": "Ceramic planter with leaves",
+      "dimensions": [
+        0.55,
+        1.05,
+        0.55
+      ],
+      "material": "ceramic",
+      "mass": 6,
+      "url": "models/plant.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 4096,
+      "instances": 0
+    },
+    {
+      "id": "delivery-cart",
+      "name": "Stainless service trolley",
+      "dimensions": [
+        0.65,
+        0.86,
+        0.46
+      ],
+      "material": "metal",
+      "mass": 12,
+      "url": "models/delivery-cart.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 2,
+      "triangles": 3656,
+      "instances": 0
+    },
+    {
+      "id": "crate",
+      "name": "Slatted timber crate",
+      "dimensions": [
+        0.5,
+        0.46,
+        0.4
+      ],
+      "material": "wood",
+      "mass": 4,
+      "url": "models/crate.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 1,
+      "triangles": 5100,
+      "instances": 0
+    },
+    {
+      "id": "floor-mirror",
+      "name": "Full-length standing mirror",
+      "category": "Bedroom",
+      "dimensions": [
+        0.68,
+        1.72,
+        0.48
+      ],
+      "mass": 12,
+      "url": "models/floor-mirror.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 5,
+      "triangles": 3240,
+      "instances": 0
+    },
+    {
+      "id": "double-bed",
+      "name": "Double bed with duvet and pillows",
+      "category": "Bedroom",
+      "dimensions": [
+        1.65,
+        1.16,
+        2.15
+      ],
+      "mass": 65,
+      "url": "models/double-bed.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 5,
+      "triangles": 10780,
+      "instances": 0
+    },
+    {
+      "id": "nightstand",
+      "name": "Two-drawer bedside cabinet",
+      "category": "Bedroom",
+      "dimensions": [
+        0.48,
+        0.56,
+        0.42
+      ],
+      "mass": 12,
+      "url": "models/nightstand.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 3060,
+      "instances": 0
+    },
+    {
+      "id": "wardrobe",
+      "name": "Double-door wardrobe",
+      "category": "Bedroom",
+      "dimensions": [
+        1.2,
+        2.02,
+        0.58
+      ],
+      "mass": 80,
+      "url": "models/wardrobe.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 3,
+      "triangles": 4240,
+      "instances": 0
+    },
+    {
+      "id": "writing-desk",
+      "name": "Writing desk with drawer and cable tray",
+      "category": "Office",
+      "dimensions": [
+        1.3,
+        0.77,
+        0.65
+      ],
+      "mass": 24,
+      "url": "models/writing-desk.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 3260,
+      "instances": 0
+    },
+    {
+      "id": "bookcase",
+      "name": "Open bookcase with books and decor",
+      "category": "Office",
+      "dimensions": [
+        0.85,
+        1.82,
+        0.32
+      ],
+      "mass": 32,
+      "url": "models/bookcase.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 11,
+      "triangles": 16568,
+      "instances": 0
+    },
+    {
+      "id": "armchair",
+      "name": "Lounge armchair with piping",
+      "category": "Living room",
+      "dimensions": [
+        0.83,
+        0.91,
+        0.84
+      ],
+      "mass": 18,
+      "url": "models/armchair.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 2360,
+      "instances": 0
+    },
+    {
+      "id": "bar-stool",
+      "name": "Upholstered counter stool",
+      "category": "Kitchen",
+      "dimensions": [
+        0.44,
+        0.98,
+        0.44
+      ],
+      "mass": 6,
+      "url": "models/bar-stool.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 2456,
+      "instances": 0
+    },
+    {
+      "id": "dining-table",
+      "name": "Six-seat oak dining table",
+      "category": "Living room",
+      "dimensions": [
+        1.8,
+        0.76,
+        0.9
+      ],
+      "mass": 35,
+      "url": "models/dining-table.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 2,
+      "triangles": 2700,
+      "instances": 0
+    },
+    {
+      "id": "tv-console",
+      "name": "Media console with television",
+      "category": "Living room",
+      "dimensions": [
+        1.5,
+        1.22,
+        0.42
+      ],
+      "mass": 35,
+      "url": "models/tv-console.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 6,
+      "triangles": 5028,
+      "instances": 0
+    },
+    {
+      "id": "refrigerator",
+      "name": "Two-door refrigerator",
+      "category": "Kitchen",
+      "dimensions": [
+        0.7,
+        1.82,
+        0.72
+      ],
+      "mass": 75,
+      "url": "models/refrigerator.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 2760,
+      "instances": 0
+    },
+    {
+      "id": "oven-range",
+      "name": "Freestanding oven and hob",
+      "category": "Kitchen",
+      "dimensions": [
+        0.6,
+        0.91,
+        0.63
+      ],
+      "mass": 48,
+      "url": "models/oven-range.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 8348,
+      "instances": 0
+    },
+    {
+      "id": "kitchen-counter",
+      "name": "Kitchen sink cabinet and worktop",
+      "category": "Kitchen",
+      "dimensions": [
+        1.2,
+        1.09,
+        0.62
+      ],
+      "mass": 60,
+      "url": "models/kitchen-counter.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 6,
+      "triangles": 4536,
+      "instances": 0
+    },
+    {
+      "id": "washing-machine",
+      "name": "Front-load washing machine",
+      "category": "Appliances",
+      "dimensions": [
+        0.6,
+        0.85,
+        0.64
+      ],
+      "mass": 65,
+      "url": "models/washing-machine.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 6,
+      "triangles": 3900,
+      "instances": 0
+    },
+    {
+      "id": "floor-lamp",
+      "name": "Floor lamp with fabric shade",
+      "category": "Lighting",
+      "dimensions": [
+        0.42,
+        1.68,
+        0.42
+      ],
+      "mass": 5,
+      "url": "models/floor-lamp.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 5,
+      "triangles": 2432,
+      "instances": 0
+    },
+    {
+      "id": "table-lamp",
+      "name": "Ceramic table lamp",
+      "category": "Lighting",
+      "dimensions": [
+        0.3,
+        0.52,
+        0.3
+      ],
+      "mass": 2,
+      "url": "models/table-lamp.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 5,
+      "triangles": 2672,
+      "instances": 0
+    },
+    {
+      "id": "bathroom-vanity",
+      "name": "Bathroom vanity with basin",
+      "category": "Bathroom",
+      "dimensions": [
+        0.8,
+        1.05,
+        0.5
+      ],
+      "mass": 35,
+      "url": "models/bathroom-vanity.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 4168,
+      "instances": 0
+    },
+    {
+      "id": "toilet",
+      "name": "Close-coupled ceramic toilet",
+      "category": "Bathroom",
+      "dimensions": [
+        0.4,
+        0.82,
+        0.7
+      ],
+      "mass": 30,
+      "url": "models/toilet.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 3,
+      "triangles": 2720,
+      "instances": 0
+    },
+    {
+      "id": "radiator",
+      "name": "Panel radiator with fins and valves",
+      "category": "Fixtures",
+      "dimensions": [
+        1,
+        0.62,
+        0.13
+      ],
+      "mass": 18,
+      "url": "models/radiator.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 3,
+      "triangles": 8720,
+      "instances": 0
+    },
+    {
+      "id": "coat-rack",
+      "name": "Standing coat rack and hanging jacket",
+      "category": "Fixtures",
+      "dimensions": [
+        0.5,
+        1.76,
+        0.5
+      ],
+      "mass": 6,
+      "url": "models/coat-rack.glb",
+      "source": "Original DYNORA modelling source: src/visual-models.js and src/room-models.js",
+      "license": "MIT",
+      "meshes": 4,
+      "triangles": 4352,
+      "instances": 0
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "profiles": [
+    {
+      "profile": "scout",
+      "source": "route",
+      "travel_m": 0.20313210487365777,
+      "duty": [
+        1,
+        1
+      ],
+      "speed_mps": 0.4211929142475128,
+      "paused": false
+    },
+    {
+      "profile": "carrier",
+      "source": "route",
+      "travel_m": 0.10264248847961512,
+      "duty": [
+        1,
+        1
+      ],
+      "speed_mps": 0.2575094401836395,
+      "paused": false
+    },
+    {
+      "profile": "courier",
+      "source": "route",
+      "travel_m": 0.13473935127258369,
+      "duty": [
+        1,
+        1
+      ],
+      "speed_mps": 0.3047177493572235,
+      "paused": false
+    },
+    {
+      "profile": "utility",
+      "source": "route",
+      "travel_m": 0.20004458427429253,
+      "duty": [
+        1,
+        1
+      ],
+      "speed_mps": 0.5025947093963623,
+      "paused": false
+    },
+    {
+      "profile": "research",
+      "source": "route",
+      "travel_m": 0.1846904277801519,
+      "duty": [
+        1,
+        1
+      ],
+      "speed_mps": 0.3800809681415558,
+      "paused": false
+    }
+  ],
+  "errors": [],
+  "notes": "Actual app control and physics state; drawing buffer scaled after boot for software-WebGL input checks, not an FPS benchmark.",
+  "pausedSwitchResumed": {
+    "profile": "carrier",
+    "source": "route",
+    "travel_m": 0.09623379707336516,
+    "duty": [
+      1,
+      1
+    ],
+    "speed_mps": 0.25363555550575256,
+    "paused": false
+  },
+  "stopPauseResumed": {
+    "profile": "carrier",
+    "source": "route",
+    "travel_m": 0.10264248847961512,
+    "duty": [
+      1,
+      1
+    ],
+    "speed_mps": 0.2575094401836395,
+    "paused": false
+  },
+  "stopDriveResumed": {
+    "profile": "carrier",
+    "source": "route",
+    "travel_m": 0.10264248847961512,
+    "duty": [
+      1,
+      1
+    ],
+    "speed_mps": 0.2575094401836395,
+    "paused": false
+  },
+  "savedProfile": {
+    "source": "route",
+    "paused": false
+  },
+  "savedProfileMovement": {
+    "profile": "utility",
+    "source": "route",
+    "travel_m": 0.20005793571472222,
+    "duty": [
+      1,
+      1
+    ],
+    "speed_mps": 0.5025947093963623,
+    "paused": false
+  },
+  "pass": true
+}

@@ -1,0 +1,120 @@
+{
+  "schema": "dynora-apartment-core-14",
+  "fixture": "Actual apartment construction, upgraded furniture, PBR roles and bundled posed Sam/Maya geometry; deterministic construction seed 42; ceiling pendants, UI and editor gizmos are not included in this structural fixture",
+  "draw": {
+    "unbatched_v9_pattern": {
+      "orbit": {
+        "mesh_submissions": 553,
+        "triangles": 388882,
+        "skinned_mesh_submissions": 28
+      },
+      "corridor_bot": {
+        "mesh_submissions": 146,
+        "triangles": 201450,
+        "skinned_mesh_submissions": 28
+      }
+    },
+    "all_scene_triangles": 388882,
+    "v13_1": {
+      "orbit": {
+        "mesh_submissions": 359,
+        "triangles": 388882,
+        "skinned_mesh_submissions": 28
+      },
+      "corridor_bot": {
+        "mesh_submissions": 129,
+        "triangles": 191454,
+        "skinned_mesh_submissions": 28
+      }
+    },
+    "updated": {
+      "orbit": {
+        "mesh_submissions": 331,
+        "triangles": 388882,
+        "skinned_mesh_submissions": 28
+      },
+      "corridor_bot": {
+        "mesh_submissions": 102,
+        "triangles": 38446,
+        "skinned_mesh_submissions": 0
+      }
+    },
+    "updated_all_scene_triangles": 388882,
+    "batches": {
+      "source_meshes": 251,
+      "submitted_batches": 29,
+      "saved_draws_per_view": 222,
+      "triangles_unchanged": 138076,
+      "rebuilds": 32
+    }
+  },
+  "sensor": {
+    "living_room": {
+      "unindexed": {
+        "median_ms": 3.731042000000116,
+        "p95_ms": 4.555217999999968,
+        "samples": 100,
+        "object_ray_tests_per_frame": 13356
+      },
+      "indexed": {
+        "median_ms": 0.7824439999999413,
+        "p95_ms": 1.2354279999999562,
+        "samples": 100,
+        "object_ray_tests_per_frame": 35
+      }
+    },
+    "near_person": {
+      "unindexed": {
+        "median_ms": 3.9293370000000323,
+        "p95_ms": 4.906510999999682,
+        "samples": 100,
+        "object_ray_tests_per_frame": 13356
+      },
+      "indexed": {
+        "median_ms": 0.9330580000000737,
+        "p95_ms": 1.266493999999966,
+        "samples": 100,
+        "object_ray_tests_per_frame": 36
+      }
+    },
+    "corridor": {
+      "unindexed": {
+        "median_ms": 3.6732050000000527,
+        "p95_ms": 4.4279389999996965,
+        "samples": 100,
+        "object_ray_tests_per_frame": 13356
+      },
+      "indexed": {
+        "median_ms": 0.7218839999995907,
+        "p95_ms": 1.0131679999999506,
+        "samples": 100,
+        "object_ray_tests_per_frame": 28
+      }
+    }
+  },
+  "note": "CPU timings and frustum-visible mesh submissions only. Not a GPU benchmark or a prediction of laptop FPS. View triangle reductions are offscreen culling; all scene triangles and source assets remain intact.",
+  "contacts": {
+    "schema": "dynora-apartment-contacts-14",
+    "scenarios": {
+      "v13_1_shadow_contacts": {
+        "objects": 20,
+        "static_triangle_meshes": 191,
+        "compound_parts": 168,
+        "awake_furniture_after_2_sim_seconds": 9,
+        "steady_contact_step_median_ms": 61.38589999999931,
+        "steady_contact_step_p95_ms": 82.52426000000014,
+        "total_240_steps_ms": 15546.129481000004
+      },
+      "updated_visual_only_shadows": {
+        "objects": 20,
+        "static_triangle_meshes": 191,
+        "compound_parts": 158,
+        "awake_furniture_after_2_sim_seconds": 6,
+        "steady_contact_step_median_ms": 6.655331999998452,
+        "steady_contact_step_p95_ms": 16.52712099999917,
+        "total_240_steps_ms": 2660.1855559999967
+      }
+    },
+    "note": "Identical actual room source construction, solver iterations, CCD, source geometry and 120 Hz timestep. Only render-only shadow registration differs. Native Node CPU timings are not browser/laptop FPS."
+  }
+}

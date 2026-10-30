@@ -1,0 +1,21 @@
+{
+  "ready": true,
+  "live_targets": 5,
+  "model_remove_undo": {
+    "removed": true,
+    "restored": true
+  },
+  "recording_zip": "robot_dataset_2026-10-27T02-27-44-879Z.zip",
+  "night": {
+    "sun": [
+      {
+        "intensity": 0,
+        "visible": false,
+        "castShadow": false
+      }
+    ],
+    "lit_bulbs": 9
+  },
+  "errors": [],
+  "renderer": "Chromium software WebGL (SwiftShader), not RTX hardware FPS"
+}

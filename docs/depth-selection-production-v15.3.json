@@ -1,0 +1,71 @@
+{
+  "pass": true,
+  "environment": "Headless software WebGL; functional tests, not laptop GPU FPS",
+  "checks": [
+    "All five rover profiles move through the production selector and keyboard controls",
+    "apartment: region-first selection, five filtered patches and exact source-pixel CSV download",
+    "Stop recording automatically downloads a verified ZIP and retains its download link",
+    "canteen: region-first selection, five filtered patches and exact source-pixel CSV download",
+    "track: region-first selection, five filtered patches and exact source-pixel CSV download"
+  ],
+  "errors": [],
+  "rover_motion": [
+    {
+      "profile": "scout",
+      "speed_mps": 0.04
+    },
+    {
+      "profile": "carrier",
+      "speed_mps": 0.103
+    },
+    {
+      "profile": "courier",
+      "speed_mps": 0.178
+    },
+    {
+      "profile": "utility",
+      "speed_mps": 0.286
+    },
+    {
+      "profile": "research",
+      "speed_mps": 0.132
+    }
+  ],
+  "scenes": [
+    {
+      "environment": "apartment",
+      "selected_ids": [
+        135,
+        136,
+        137,
+        138,
+        139
+      ],
+      "status": "Snapshot · batch 2 · simulation 4.408 s\n44 rays · 12 valid · 1124 ms batch latency\nRange 483.32 cm · Z 481.70 cm\nCaptured 0.3 s ago"
+    },
+    {
+      "environment": "canteen",
+      "selected_ids": [
+        104,
+        105,
+        106,
+        107,
+        120
+      ],
+      "status": "Snapshot · batch 2 · simulation 1.500 s\n45 rays · 39 valid · 7422 ms batch latency\nRange 387.88 cm · Z 384.74 cm\nCaptured 4.3 s ago"
+    },
+    {
+      "environment": "track",
+      "selected_ids": [
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "status": "Snapshot · batch 2 · simulation 1.758 s\n45 rays · 45 valid · 876 ms batch latency\nRange 723.98 cm · Z 717.30 cm\nCaptured 0.0 s ago"
+    }
+  ],
+  "recording_status": "ZIP verified · quality PASS_WITH_WARNINGS · 3 rows / 1 images. Download ZIP below. Saved for recovery after reload.",
+  "recording_bytes": 46644399
+}

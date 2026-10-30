@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "checks": [
+    "Opening empty grid performs zero depth queries",
+    "Pointer click selects one patch and toggles it off",
+    "Only the chosen 20 or 40 patches receive 180 or 360 sample rays",
+    "All 256 patches complete in one frozen batch at the 6400-ray limit",
+    "Real browser CSV download includes exactly the 256 selected IDs",
+    "Picked curved part excludes the wall and becomes unavailable behind an occluder",
+    "Drag selection samples only the selected portions of intersecting patches",
+    "Resizing preserves the selected image area and the full visible camera feed",
+    "Clear cancels pending work and returns to zero depth queries",
+    "Existing point selection and five-live-anchor path still work"
+  ],
+  "errors": [],
+  "selected20": {
+    "rays": 180,
+    "latency_ms": 284.9000000022352,
+    "query_ms": 6.399999991059303
+  },
+  "selected40": {
+    "rays": 360,
+    "latency_ms": 271.69999999925494,
+    "query_ms": 7.000000011175871
+  },
+  "full256": {
+    "rays": 6400,
+    "latency_ms": 3226.7000000029802,
+    "query_ms": 75.19999998435378
+  }
+}

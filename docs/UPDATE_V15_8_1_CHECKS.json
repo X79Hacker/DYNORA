@@ -1,0 +1,45 @@
+{
+  "version": "15.8.1",
+  "focused_tests": {
+    "pass": 72,
+    "fail": 0
+  },
+  "live_browser": {
+    "camera_motion": {
+      "before": [
+        2.7634930377157687,
+        2.76350649038541
+      ],
+      "after": [
+        2.5359904525759216,
+        2.5256703773306635
+      ]
+    },
+    "independent_object_motion": "pass",
+    "edit_focus_preserves_all": "pass",
+    "manual_updates_all": "pass",
+    "shared_heatmap": "pass",
+    "blocked_target": "pass",
+    "empty_filter_does_not_stop_others": "pass",
+    "remove_region": "pass",
+    "same_batch_frame_time": "pass",
+    "two_labels_same_draw": "pass",
+    "errors": []
+  },
+  "export_validation": {
+    "frames": 2,
+    "region_rows": 4,
+    "decoded_images": 4,
+    "csv_region_ids": [
+      1,
+      2
+    ],
+    "matching_rgb_snap_depth_source_frames_and_times": true,
+    "same_saved_outline_paths": true
+  },
+  "limits": [
+    "Software WebGL browser check is not a hardware FPS benchmark.",
+    "Live rate is best effort; one shared cycle at a time.",
+    "Sampled visibility and reduced-order physics limitations from V15.8 remain."
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "crc": true,
+  "manifest_hashes": 33,
+  "patch_ids": [
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "patch_count": 40,
+  "sample_count": 360,
+  "csv_rows": 56,
+  "per_surface_support_verified": true,
+  "images": [
+    {
+      "path": "images/apartment_mvquga6f_1_img_000000.png",
+      "size": [
+        640,
+        480
+      ]
+    }
+  ],
+  "quality": {
+    "schema": "dynora-quality-3",
+    "pass": true,
+    "status": "PASS_WITH_WARNINGS",
+    "counts": {
+      "rows": 5,
+      "images": 1,
+      "frames": 5,
+      "runs": 1,
+      "sample_gaps": 0,
+      "invalid_tof": 5
+    },
+    "errors": [],
+    "warnings": [
+      {
+        "code": "invalid_tof",
+        "message": "5 ToF values marked unavailable/dropout/out of range"
+      }
+    ],
+    "image_audit": {
+      "images/apartment_mvquga6f_1_img_000000.png": {
+        "mean_luma": 165.75212524414147,
+        "std_luma": 41.756080685872476,
+        "dark_fraction": 0,
+        "clipped_fraction": 0,
+        "uniform": false,
+        "samples": 4096,
+        "capture_sim_s": 2.7083333333333264,
+        "camera": {
+          "width": 640,
+          "height": 480,
+          "fx": 342.75552161810754,
+          "fy": 342.75552161810754,
+          "cx": 320,
+          "cy": 240,
+          "distortion_model": "plumb_bob",
+          "D": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "K": [
+            342.75552161810754,
+            0,
+            320,
+            0,
+            342.75552161810754,
+            240,
+            0,
+            0,
+            1
+          ],
+          "frame_id": "camera_optical",
+          "optical_axes": "x right, y down, z forward",
+          "mount_body_xyz_m": [
+            0.13300000000000045,
+            0,
+            0.1725894
+          ],
+          "mount_yaw_pitch_roll_deg": [
+            0,
+            0,
+            0
+          ],
+          "clearance": {
+            "configured_body_xyz_m": [
+              0.133,
+              0,
+              0.1725894
+            ],
+            "effective_body_xyz_m": [
+              0.13300000000000045,
+              0,
+              0.1725894
+            ],
+            "clearance_adjusted": false,
+            "near_m": 0.0015,
+            "clearance_radius_m": 0.0030412007824736948
+          }
+        },
+        "width": 640,
+        "height": 480,
+        "camera_frozen": false,
+        "rgb_source_sim_s": 2.7083333333333264,
+        "active_fault_ids": [],
+        "bytes": 347956
+      }
+    }
+  }
+}

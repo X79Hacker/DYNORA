@@ -1,0 +1,263 @@
+{
+  "software_version": "15.8.4",
+  "unit_checks": {
+    "passed": 75,
+    "failed": 0
+  },
+  "production_build": "passed",
+  "browser": {
+    "passed": true,
+    "cases": [
+      {
+        "name": "both_checked.png",
+        "ids": [
+          1,
+          2
+        ],
+        "status": "complete",
+        "snap_status": "complete",
+        "source_frame_index": 80,
+        "capture_sim_s": 1.3166666666666667
+      },
+      {
+        "name": "only_second.png",
+        "ids": [
+          2
+        ],
+        "status": "complete",
+        "snap_status": "complete",
+        "source_frame_index": 113,
+        "capture_sim_s": 1.8666666666666667
+      },
+      {
+        "name": "editing_unchecked_first.png",
+        "ids": [
+          2
+        ],
+        "status": "complete",
+        "snap_status": "complete",
+        "source_frame_index": 134,
+        "capture_sim_s": 2.216666666666667
+      },
+      {
+        "name": "both_after_camera_motion.png",
+        "ids": [
+          1,
+          2
+        ],
+        "status": "complete",
+        "snap_status": "complete",
+        "source_frame_index": 183,
+        "capture_sim_s": 3.033333333333333
+      },
+      {
+        "name": "frozen_both_then_uncheck_first.png",
+        "ids": [
+          1,
+          2
+        ],
+        "status": "complete",
+        "snap_status": "complete",
+        "source_frame_index": 222,
+        "capture_sim_s": 3.683333333333333
+      },
+      {
+        "name": "after_capture_only_second.png",
+        "ids": [
+          2
+        ],
+        "status": "complete",
+        "snap_status": "complete",
+        "source_frame_index": 241,
+        "capture_sim_s": 4
+      },
+      {
+        "name": "only_first.png",
+        "ids": [
+          1
+        ],
+        "status": "complete",
+        "snap_status": "complete",
+        "source_frame_index": 272,
+        "capture_sim_s": 4.516666666666667
+      },
+      {
+        "name": "none_checked.png",
+        "ids": [],
+        "status": "no_region",
+        "snap_status": "no_region",
+        "source_frame_index": 298,
+        "capture_sim_s": 4.95
+      },
+      {
+        "name": "only_edited_second.png",
+        "ids": [
+          2
+        ],
+        "status": "complete",
+        "snap_status": "complete",
+        "source_frame_index": 331,
+        "capture_sim_s": 5.5
+      },
+      {
+        "name": "none_with_saved_point.png",
+        "ids": [],
+        "status": "no_region",
+        "snap_status": "no_region",
+        "source_frame_index": 400,
+        "capture_sim_s": 6.65
+      }
+    ],
+    "feed": {
+      "frames": 417,
+      "feed_checks": 41,
+      "feed_black": 0
+    },
+    "errors": [],
+    "final_regions": [
+      {
+        "id": 1,
+        "included": false
+      },
+      {
+        "id": 2,
+        "included": false
+      }
+    ],
+    "tests": [
+      "checkbox subsets",
+      "edit focus independent",
+      "both green outlines and live grids",
+      "shared acquisition frame/time",
+      "heatmap",
+      "snapshot selection frozen",
+      "no legacy point overlays",
+      "blank none-selected capture",
+      "standalone snapshot download"
+    ]
+  },
+  "production_smoke": {
+    "passed": true,
+    "checkbox_controls": true,
+    "test_lab_shortcuts": true,
+    "isolated_lane": true,
+    "errors": []
+  },
+  "export_validation": {
+    "passed": true,
+    "image_pairs": 11,
+    "recording_pairs": 10,
+    "standalone_manifest_hashes": 11,
+    "checks": [
+      "ZIP CRC and unique paths",
+      "PNG decoding and equal dimensions",
+      "RGB/depth/snap frame and time identity",
+      "only checked region IDs in all CSV/JSON",
+      "exact shared outline geometry",
+      "outline pixels inside checked bounds",
+      "none checked produces all-white snap",
+      "standalone SHA-256 and byte counts"
+    ],
+    "frames": [
+      {
+        "image": "both_checked.png",
+        "selected_region_ids": [
+          1,
+          2
+        ],
+        "frame": 80,
+        "sync_delta_s": 0,
+        "ink_pixels": 579
+      },
+      {
+        "image": "only_second.png",
+        "selected_region_ids": [
+          2
+        ],
+        "frame": 113,
+        "sync_delta_s": 0,
+        "ink_pixels": 345
+      },
+      {
+        "image": "editing_unchecked_first.png",
+        "selected_region_ids": [
+          2
+        ],
+        "frame": 134,
+        "sync_delta_s": 0,
+        "ink_pixels": 345
+      },
+      {
+        "image": "both_after_camera_motion.png",
+        "selected_region_ids": [
+          1,
+          2
+        ],
+        "frame": 183,
+        "sync_delta_s": 0,
+        "ink_pixels": 600
+      },
+      {
+        "image": "frozen_both_then_uncheck_first.png",
+        "selected_region_ids": [
+          1,
+          2
+        ],
+        "frame": 222,
+        "sync_delta_s": 0,
+        "ink_pixels": 600
+      },
+      {
+        "image": "after_capture_only_second.png",
+        "selected_region_ids": [
+          2
+        ],
+        "frame": 241,
+        "sync_delta_s": 0,
+        "ink_pixels": 340
+      },
+      {
+        "image": "only_first.png",
+        "selected_region_ids": [
+          1
+        ],
+        "frame": 272,
+        "sync_delta_s": 0,
+        "ink_pixels": 260
+      },
+      {
+        "image": "none_checked.png",
+        "selected_region_ids": [],
+        "frame": 298,
+        "sync_delta_s": 0,
+        "ink_pixels": 0
+      },
+      {
+        "image": "only_edited_second.png",
+        "selected_region_ids": [
+          2
+        ],
+        "frame": 331,
+        "sync_delta_s": 0,
+        "ink_pixels": 340
+      },
+      {
+        "image": "none_with_saved_point.png",
+        "selected_region_ids": [],
+        "frame": 400,
+        "sync_delta_s": 0,
+        "ink_pixels": 0
+      },
+      {
+        "image": "standalone_selected.png",
+        "selected_region_ids": [
+          2
+        ],
+        "frame": 342,
+        "sync_delta_s": 0,
+        "ink_pixels": 340
+      }
+    ]
+  },
+  "limits": "Browser checks used software WebGL. No hardware FPS claim is made."
+}

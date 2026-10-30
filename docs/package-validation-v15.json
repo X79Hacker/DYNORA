@@ -1,0 +1,12 @@
+{
+  "files": 417,
+  "crc_verified": true,
+  "original_public_assets": 88,
+  "original_cad_files": 24,
+  "required_files": 16,
+  "local_html_references_verified": true,
+  "node_tests_passed": 227,
+  "python_tests_passed": 3,
+  "fresh_extraction_restored_assets": 88,
+  "all_checks_passed": true
+}

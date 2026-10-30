@@ -1,0 +1,63 @@
+{
+  "pass": true,
+  "environment": "Built production app; headless software WebGL; not a laptop FPS benchmark",
+  "checks": [
+    "apartment: five images, per-image depth with 3 samples/patch, 2 Hz preview, moving rover and verified automatic ZIP export",
+    "canteen: five images, per-image depth with 3 samples/patch, 2 Hz preview, moving rover and verified automatic ZIP export",
+    "track: five images, per-image depth with 3 samples/patch, 2 Hz preview, moving rover and verified automatic ZIP export"
+  ],
+  "errors": [],
+  "scenes": [
+    {
+      "environment": "apartment",
+      "requested_patch_ids": [
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "samples_per_patch": 3,
+      "preview_hz": 2,
+      "image_target_hz": 5,
+      "images": 5,
+      "depth_panel_closed_after_first_image": true,
+      "status": "ZIP verified · quality PASS_WITH_WARNINGS · 9 rows / 5 images. Download ZIP below. Saved for recovery after reload.",
+      "bytes": 48111843
+    },
+    {
+      "environment": "canteen",
+      "requested_patch_ids": [
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "samples_per_patch": 3,
+      "preview_hz": 2,
+      "image_target_hz": 5,
+      "images": 5,
+      "depth_panel_closed_after_first_image": true,
+      "status": "ZIP verified · quality PASS_WITH_WARNINGS · 8 rows / 5 images. Download ZIP below. Saved for recovery after reload.",
+      "bytes": 63570231
+    },
+    {
+      "environment": "track",
+      "requested_patch_ids": [
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "samples_per_patch": 3,
+      "preview_hz": 2,
+      "image_target_hz": 5,
+      "images": 5,
+      "depth_panel_closed_after_first_image": true,
+      "status": "ZIP verified · quality PASS_WITH_WARNINGS · 13 rows / 5 images. Download ZIP below. Saved for recovery after reload.",
+      "bytes": 38267426
+    }
+  ]
+}
