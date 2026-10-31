@@ -1,0 +1,1045 @@
+<?xml version="1.0" ?>
+<!-- GENERATED FOR GAZEBO HARMONIC + ROS 2 - FULLY FUNCTIONAL WITH ORIGINAL WHEEL ORIENTATION -->
+<robot name="my_bot">
+
+  <!-- ========== ODOMETRY FRAME ========== -->
+  <link name="base_footprint"/>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="aluminium_sheet"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ========== ALUMINIUM SHEET (MAIN BODY) ========== -->
+  <link name="aluminium_sheet">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <!-- ========== WHEEL 1 - RIGHT FRONT ========== -->
+  <link name="wheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <link name="wheel_wheel">
+    <inertial>
+      <origin xyz="0.000545815 -2.24669e-07 2.00325e-07" rpy="0 0 0"/>
+      <mass value="0.154798"/>
+      <inertia ixx="0.00023164" ixy="-2e-11" ixz="1.7e-11" iyy="0.000126812" iyz="-0" izz="0.000127152"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/wheel.stl"/>
+      </geometry>
+      <material name="wheel_material">
+        <color rgba="0.32549 0.529412 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wheel_wheel_fixed" type="fixed">
+    <origin xyz="0 0 0.005" rpy="1.5708 1.5708 0"/>
+    <parent link="wheel"/>
+    <child link="wheel_wheel"/>
+  </joint>
+
+  <joint name="right_front" type="continuous">
+    <origin xyz="0.0730882 -0.125566 -0.0680894" rpy="1.5708 -0.00607694 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="wheel"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.7" friction="0.1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+
+  <!-- ========== WHEEL 2 - RIGHT BACK ========== -->
+  <link name="wheel_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <link name="wheel_2_wheel_2">
+    <inertial>
+      <origin xyz="0.000545815 -2.24669e-07 2.00325e-07" rpy="0 0 0"/>
+      <mass value="0.154798"/>
+      <inertia ixx="0.00023164" ixy="-2e-11" ixz="1.7e-11" iyy="0.000126812" iyz="-0" izz="0.000127152"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/wheel.stl"/>
+      </geometry>
+      <material name="wheel_2_material">
+        <color rgba="0.32549 0.529412 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wheel_2_wheel_2_fixed" type="fixed">
+    <origin xyz="0 0 0.005" rpy="1.5708 1.5708 0"/>
+    <parent link="wheel_2"/>
+    <child link="wheel_2_wheel_2"/>
+  </joint>
+
+  <joint name="right_back" type="continuous">
+    <origin xyz="-0.0779337 -0.125566 -0.0680894" rpy="1.5708 0.0650949 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="wheel_2"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.7" friction="0.1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+
+  <!-- ========== WHEEL 3 - LEFT FRONT ========== -->
+  <link name="wheel_3">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <link name="wheel_3_wheel_3">
+    <inertial>
+      <origin xyz="0.000545815 -2.24669e-07 2.00325e-07" rpy="0 0 0"/>
+      <mass value="0.154798"/>
+      <inertia ixx="0.00023164" ixy="-2e-11" ixz="1.7e-11" iyy="0.000126812" iyz="-0" izz="0.000127152"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/wheel.stl"/>
+      </geometry>
+      <material name="wheel_3_material">
+        <color rgba="0.32549 0.529412 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wheel_3_wheel_3_fixed" type="fixed">
+    <origin xyz="0 0 -0.005" rpy="-1.5708 -1.5708 0"/>
+    <parent link="wheel_3"/>
+    <child link="wheel_3_wheel_3"/>
+  </joint>
+
+  <joint name="left_front" type="continuous">
+    <origin xyz="0.073088 0.125452 -0.0680894" rpy="1.5708 0.0468302 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="wheel_3"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.7" friction="0.1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+
+  <!-- ========== WHEEL 4 - LEFT BACK ========== -->
+  <link name="wheel_4">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <link name="wheel_4_wheel_4">
+    <inertial>
+      <origin xyz="0.000545815 -2.24669e-07 2.00325e-07" rpy="0 0 0"/>
+      <mass value="0.154798"/>
+      <inertia ixx="0.00023164" ixy="-2e-11" ixz="1.7e-11" iyy="0.000126812" iyz="-0" izz="0.000127152"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/wheel.stl"/>
+      </geometry>
+      <material name="wheel_4_material">
+        <color rgba="0.32549 0.529412 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wheel_4_wheel_4_fixed" type="fixed">
+    <origin xyz="0 0 -0.005" rpy="-1.5708 -1.5708 0"/>
+    <parent link="wheel_4"/>
+    <child link="wheel_4_wheel_4"/>
+  </joint>
+
+  <joint name="left_back" type="continuous">
+    <origin xyz="-0.0779334 0.125452 -0.0680894" rpy="1.5708 -0.00607694 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="wheel_4"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.7" friction="0.1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+
+  <!-- ========== JOHNSON MOTOR 1 ========== -->
+  <link name="aluminium_sheet_johnson_motor">
+    <inertial>
+      <origin xyz="-0.000147725 0 -0.0275472" rpy="0 0 0"/>
+      <mass value="0.43405"/>
+      <inertia ixx="0.000211711" ixy="0" ixz="2.75278e-06" iyy="0.000212023" iyz="0" izz="5.84908e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/johnson_motor.stl"/>
+      </geometry>
+      <material name="johnson_motor_material">
+        <color rgba="0.917647 0.917647 0.917647 0.729412"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/johnson_motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_johnson_motor_fixed" type="fixed">
+    <origin xyz="-0.0779334 0.085452 -0.0730894" rpy="-1.5708 1.5708 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_johnson_motor"/>
+  </joint>
+
+  <!-- ========== JOHNSON MOTOR 2 ========== -->
+  <link name="aluminium_sheet_johnson_motor_2">
+    <inertial>
+      <origin xyz="-0.000147725 0 -0.0275472" rpy="0 0 0"/>
+      <mass value="0.43405"/>
+      <inertia ixx="0.000211711" ixy="0" ixz="2.75278e-06" iyy="0.000212023" iyz="0" izz="5.84908e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/johnson_motor.stl"/>
+      </geometry>
+      <material name="johnson_motor_2_material">
+        <color rgba="0.917647 0.917647 0.917647 0.729412"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/johnson_motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_johnson_motor_2_fixed" type="fixed">
+    <origin xyz="0.073088 0.085452 -0.0730894" rpy="-1.5708 1.5708 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_johnson_motor_2"/>
+  </joint>
+
+  <!-- ========== JOHNSON MOTOR 3 ========== -->
+  <link name="aluminium_sheet_johnson_motor_3">
+    <inertial>
+      <origin xyz="-0.000147725 0 -0.0275472" rpy="0 0 0"/>
+      <mass value="0.43405"/>
+      <inertia ixx="0.000211711" ixy="0" ixz="2.75278e-06" iyy="0.000212023" iyz="0" izz="5.84908e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/johnson_motor.stl"/>
+      </geometry>
+      <material name="johnson_motor_3_material">
+        <color rgba="0.917647 0.917647 0.917647 0.729412"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/johnson_motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_johnson_motor_3_fixed" type="fixed">
+    <origin xyz="0.0730882 -0.085566 -0.0730894" rpy="1.5708 1.5708 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_johnson_motor_3"/>
+  </joint>
+
+  <!-- ========== JOHNSON MOTOR 4 ========== -->
+  <link name="aluminium_sheet_johnson_motor_4">
+    <inertial>
+      <origin xyz="-0.000147725 0 -0.0275472" rpy="0 0 0"/>
+      <mass value="0.43405"/>
+      <inertia ixx="0.000211711" ixy="0" ixz="2.75278e-06" iyy="0.000212023" iyz="0" izz="5.84908e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/johnson_motor.stl"/>
+      </geometry>
+      <material name="johnson_motor_4_material">
+        <color rgba="0.917647 0.917647 0.917647 0.729412"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/johnson_motor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_johnson_motor_4_fixed" type="fixed">
+    <origin xyz="-0.0779337 -0.085566 -0.0730894" rpy="1.5708 1.5708 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_johnson_motor_4"/>
+  </joint>
+
+  <!-- ========== MAIN BODY VISUAL ========== -->
+  <link name="aluminium_sheet_aluminium_sheet">
+    <inertial>
+      <origin xyz="0 -0.00242271 0.0015" rpy="0 0 0"/>
+      <mass value="0.278131"/>
+      <inertia ixx="0.00122189" ixy="0" ixz="0" iyy="0.000518084" iyz="0" izz="0.00173956"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/aluminium_sheet.stl"/>
+      </geometry>
+      <material name="aluminium_sheet_material">
+        <color rgba="0.654902 0.584314 0.823529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/aluminium_sheet.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_aluminium_sheet_fixed" type="fixed">
+    <origin xyz="-0.00242271 0 -0.003" rpy="0 0 1.5708"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_aluminium_sheet"/>
+  </joint>
+
+  <!-- ========== TOF SENSOR 1 ========== -->
+  <link name="aluminium_sheet_tof_sensor">
+    <inertial>
+      <origin xyz="-1.87588e-06 -0.00105733 -0.000152376" rpy="0 0 0"/>
+      <mass value="0.00355808"/>
+      <inertia ixx="4.3975e-08" ixy="-1.1e-11" ixz="-8e-12" iyy="1.37022e-07" iyz="-2.55e-10" izz="9.6021e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/tof_sensor.stl"/>
+      </geometry>
+      <material name="tof_sensor_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/tof_sensor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_tof_sensor_fixed" type="fixed">
+    <origin xyz="0.112995 0 0.0064" rpy="0 0 1.5708"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_tof_sensor"/>
+  </joint>
+
+  <!-- ========== TOF SENSOR 2 ========== -->
+  <link name="aluminium_sheet_tof_sensor_2">
+    <inertial>
+      <origin xyz="-1.87588e-06 -0.00105733 -0.000152376" rpy="0 0 0"/>
+      <mass value="0.00355808"/>
+      <inertia ixx="4.3975e-08" ixy="-1.1e-11" ixz="-8e-12" iyy="1.37022e-07" iyz="-2.55e-10" izz="9.6021e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/tof_sensor.stl"/>
+      </geometry>
+      <material name="tof_sensor_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/tof_sensor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_tof_sensor_2_fixed" type="fixed">
+    <origin xyz="0.0999946 -0.0725 0.0064" rpy="0 0 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_tof_sensor_2"/>
+  </joint>
+
+  <!-- ========== TOF SENSOR 3 ========== -->
+  <link name="aluminium_sheet_tof_sensor_3">
+    <inertial>
+      <origin xyz="-1.87588e-06 -0.00105733 -0.000152376" rpy="0 0 0"/>
+      <mass value="0.00355808"/>
+      <inertia ixx="4.3975e-08" ixy="-1.1e-11" ixz="-8e-12" iyy="1.37022e-07" iyz="-2.55e-10" izz="9.6021e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/tof_sensor.stl"/>
+      </geometry>
+      <material name="tof_sensor_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/tof_sensor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_tof_sensor_3_fixed" type="fixed">
+    <origin xyz="-0.113005 0 0.0064" rpy="0 0 -1.5708"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_tof_sensor_3"/>
+  </joint>
+
+  <!-- ========== TOF SENSOR 4 ========== -->
+  <link name="aluminium_sheet_tof_sensor_4">
+    <inertial>
+      <origin xyz="-1.87588e-06 -0.00105733 -0.000152376" rpy="0 0 0"/>
+      <mass value="0.00355808"/>
+      <inertia ixx="4.3975e-08" ixy="-1.1e-11" ixz="-8e-12" iyy="1.37022e-07" iyz="-2.55e-10" izz="9.6021e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/tof_sensor.stl"/>
+      </geometry>
+      <material name="tof_sensor_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/tof_sensor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_tof_sensor_4_fixed" type="fixed">
+    <origin xyz="0.0972446 0.073 0.0064" rpy="0 0 3.14159"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_tof_sensor_4"/>
+  </joint>
+
+    <!-- ====================================================== -->
+  <!-- ================= REAL TOF SENSORS =================== -->
+  <!-- ====================================================== -->
+
+  <!-- FRONT TOF -->
+  <link name="tof_front_link"/>
+  <joint name="tof_front_joint" type="fixed">
+    <parent link="aluminium_sheet"/>
+    <child link="tof_front_link"/>
+    <origin xyz="0.113 0 0.0064" rpy="0 0 0"/>
+  </joint>
+
+  <!-- RIGHT TOF -->
+  <link name="tof_right_link"/>
+  <joint name="tof_right_joint" type="fixed">
+    <parent link="aluminium_sheet"/>
+    <child link="tof_right_link"/>
+    <origin xyz="0.099 -0.0725 0.0064" rpy="0 0 -1.5708"/>
+  </joint>
+
+  <!-- BACK TOF -->
+  <link name="tof_back_link"/>
+  <joint name="tof_back_joint" type="fixed">
+    <parent link="aluminium_sheet"/>
+    <child link="tof_back_link"/>
+    <origin xyz="-0.113 0 0.0064" rpy="0 0 3.14159"/>
+  </joint>
+
+  <!-- LEFT TOF -->
+  <link name="tof_left_link"/>
+  <joint name="tof_left_joint" type="fixed">
+    <parent link="aluminium_sheet"/>
+    <child link="tof_left_link"/>
+    <origin xyz="0.097 0.073 0.0064" rpy="0 0 1.5708"/>
+  </joint>
+
+  <!-- ========== HOLDER 1 ========== -->
+  <link name="aluminium_sheet_holder1">
+    <inertial>
+      <origin xyz="0.00128255 -0.13544 -0.0119604" rpy="0 0 0"/>
+      <mass value="0.144525"/>
+      <inertia ixx="8.9465e-05" ixy="5.91112e-07" ixz="4.62013e-06" iyy="4.55969e-05" iyz="-2.09552e-05" izz="6.07392e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/holder1.stl"/>
+      </geometry>
+      <material name="holder1_material">
+        <color rgba="0.764706 0.545098 0.803922 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/holder1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_holder1_fixed" type="fixed">
+    <origin xyz="0.0858256 -0.0757361 -0.00296047" rpy="0 0 -1.5708"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_holder1"/>
+  </joint>
+
+  <!-- ========== HOLDER 2 ========== -->
+  <link name="aluminium_sheet_holder">
+    <inertial>
+      <origin xyz="0.00128255 -0.0645595 -0.0119604" rpy="0 0 0"/>
+      <mass value="0.144525"/>
+      <inertia ixx="8.9465e-05" ixy="-5.91112e-07" ixz="4.62013e-06" iyy="4.55969e-05" iyz="2.09552e-05" izz="6.07392e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/holder.stl"/>
+      </geometry>
+      <material name="holder_material">
+        <color rgba="0.764706 0.545098 0.803922 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/holder.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_holder_fixed" type="fixed">
+    <origin xyz="-0.114174 0.0756221 -0.00296047" rpy="0 0 1.5708"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_holder"/>
+  </joint>
+
+  <!-- ========== HOLDER 3 ========== -->
+  <link name="aluminium_sheet_holder_2">
+    <inertial>
+      <origin xyz="0.00128255 -0.0645595 -0.0119604" rpy="0 0 0"/>
+      <mass value="0.144525"/>
+      <inertia ixx="8.9465e-05" ixy="-5.91112e-07" ixz="4.62013e-06" iyy="4.55969e-05" iyz="2.09552e-05" izz="6.07392e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/holder.stl"/>
+      </geometry>
+      <material name="holder_2_material">
+        <color rgba="0.764706 0.545098 0.803922 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/holder.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_holder_2_fixed" type="fixed">
+    <origin xyz="0.109329 -0.0757361 -0.00296047" rpy="0 0 -1.5708"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_holder_2"/>
+  </joint>
+
+  <!-- ========== HOLDER 4 ========== -->
+  <link name="aluminium_sheet_holder1_2">
+    <inertial>
+      <origin xyz="0.00128255 -0.13544 -0.0119604" rpy="0 0 0"/>
+      <mass value="0.144525"/>
+      <inertia ixx="8.9465e-05" ixy="5.91112e-07" ixz="4.62013e-06" iyy="4.55969e-05" iyz="-2.09552e-05" izz="6.07392e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/holder1.stl"/>
+      </geometry>
+      <material name="holder1_2_material">
+        <color rgba="0.764706 0.545098 0.803922 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/holder1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_holder1_2_fixed" type="fixed">
+    <origin xyz="-0.0906712 0.0756221 -0.00296047" rpy="0 0 1.5708"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_holder1_2"/>
+  </joint>
+
+  <!-- ========== CAMERA ========== -->
+  <link name="camera_link"> <!-- Camera -->
+
+    <inertial>
+      <origin xyz="0 -0.0026228 -0" rpy="0 0 0"/>
+      <mass value="0.00389726"/>
+      <inertia ixx="1.35257e-07" ixy="0" ixz="0" iyy="4.08091e-07" iyz="0" izz="2.91507e-07"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/part_1.stl"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/part_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <origin xyz="0.1115 -0.00015 0.037" rpy="0 0 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="camera_link"/>
+  </joint>
+
+  <!-- ========== CAMERA OPTICAL LINK ========== -->
+  <!-- This resolves the orientation difference between Gazebo (X-forward) and ROS (Z-forward) -->
+  <link name="camera_link_optical"/>
+
+  <joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
+    <parent link="camera_link"/>
+    <child link="camera_link_optical"/>
+  </joint>
+
+<!-- GAZEBO CAMERA SENSOR -->
+  <gazebo reference="camera_link">
+    <sensor name="camera" type="camera">
+      <pose>0 0 0.45 0 0 0</pose>
+      <always_on>true</always_on>
+      <update_rate>30</update_rate>
+      <visualize>true</visualize>
+      <topic>camera/image_raw</topic>
+      <gz_frame_id>camera_link_optical</gz_frame_id> <!-- CRITICAL FOR ROS 2 -->
+      <camera>
+        <horizontal_fov>1.047</horizontal_fov>
+        <image>
+          <width>896</width>
+          <height>896</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>10.0</far>
+        </clip>
+      </camera>
+    </sensor>
+  </gazebo>
+
+  <!-- CAMERA INFO PUBLISHER -->
+  <gazebo>
+    <plugin filename="gz-sim-camera-info-system" name="gz::sim::systems::CameraInfoPublisher">
+      <sensor_name>camera</sensor_name>
+      <topic_name>/model/my_bot/camera/camera_info</topic_name>
+      <frame_name>camera_link</frame_name>
+    </plugin>
+  </gazebo>
+
+  <!-- ========== PART 2 ========== -->
+  <link name="camera_link_2">
+    <inertial>
+      <origin xyz="-0.000462295 0.02 -0.000262295" rpy="0 0 0"/>
+      <mass value="0.0206275"/>
+      <inertia ixx="3.5445e-06" ixy="0" ixz="0" iyy="1.58833e-06" iyz="0" izz="3.5445e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/part_1__2.stl"/>
+      </geometry>
+      <material name="part_1_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/part_1__2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="camera_link_2_fixed" type="fixed">
+    <origin xyz="0.101038 0.000262295 0" rpy="1.5708 0 3.14159"/>
+    <parent link="aluminium_sheet"/>
+    <child link="camera_link_2"/>
+  </joint>
+
+  <!-- ========== MOTOR BRACKET 1 ========== -->
+  <link name="aluminium_sheet_motor_bracket">
+    <inertial>
+      <origin xyz="0 0.00881561 0.0107734" rpy="0 0 0"/>
+      <mass value="0.0119613"/>
+      <inertia ixx="4.28082e-06" ixy="0" ixz="0" iyy="3.71509e-06" iyz="-1.21896e-06" izz="3.79692e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/motor_bracket.stl"/>
+      </geometry>
+      <material name="motor_bracket_material">
+        <color rgba="0.32549 0.529412 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/motor_bracket.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_motor_bracket_fixed" type="fixed">
+    <origin xyz="-0.0779337 -0.0672165 -0.0460894" rpy="-3.14159 0 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_motor_bracket"/>
+  </joint>
+
+  <!-- ========== MOTOR BRACKET 2 ========== -->
+  <link name="aluminium_sheet_motor_bracket_2">
+    <inertial>
+      <origin xyz="0 0.00881561 0.0107734" rpy="0 0 0"/>
+      <mass value="0.0119613"/>
+      <inertia ixx="4.28082e-06" ixy="0" ixz="0" iyy="3.71509e-06" iyz="-1.21896e-06" izz="3.79692e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/motor_bracket.stl"/>
+      </geometry>
+      <material name="motor_bracket_2_material">
+        <color rgba="0.32549 0.529412 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/motor_bracket.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_motor_bracket_2_fixed" type="fixed">
+    <origin xyz="0.073088 0.0671025 -0.0460894" rpy="-3.14159 0 3.14159"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_motor_bracket_2"/>
+  </joint>
+
+  <!-- ========== MOTOR BRACKET 3 ========== -->
+  <link name="aluminium_sheet_motor_bracket_3">
+    <inertial>
+      <origin xyz="0 0.00881561 0.0107734" rpy="0 0 0"/>
+      <mass value="0.0119613"/>
+      <inertia ixx="4.28082e-06" ixy="0" ixz="0" iyy="3.71509e-06" iyz="-1.21896e-06" izz="3.79692e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/motor_bracket.stl"/>
+      </geometry>
+      <material name="motor_bracket_3_material">
+        <color rgba="0.32549 0.529412 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/motor_bracket.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_motor_bracket_3_fixed" type="fixed">
+    <origin xyz="-0.0779334 0.0671025 -0.0460894" rpy="-3.14159 0 3.14159"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_motor_bracket_3"/>
+  </joint>
+
+  <!-- ========== MOTOR BRACKET 4 ========== -->
+  <link name="aluminium_sheet_motor_bracket_4">
+    <inertial>
+      <origin xyz="0 0.00881561 0.0107734" rpy="0 0 0"/>
+      <mass value="0.0119613"/>
+      <inertia ixx="4.28082e-06" ixy="0" ixz="0" iyy="3.71509e-06" iyz="-1.21896e-06" izz="3.79692e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/motor_bracket.stl"/>
+      </geometry>
+      <material name="motor_bracket_4_material">
+        <color rgba="0.32549 0.529412 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model://my_bot/assets/motor_bracket.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="aluminium_sheet_motor_bracket_4_fixed" type="fixed">
+    <origin xyz="0.0730882 -0.0672165 -0.0460894" rpy="-3.14159 0 0"/>
+    <parent link="aluminium_sheet"/>
+    <child link="aluminium_sheet_motor_bracket_4"/>
+  </joint>
+
+  <!-- ========== GAZEBO HARMONIC DIFF DRIVE PLUGIN ========== -->
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>left_front</left_joint>
+      <left_joint>left_back</left_joint>
+      <right_joint>right_front</right_joint>
+      <right_joint>right_back</right_joint>
+      <wheel_separation>0.251</wheel_separation>
+      <wheel_radius>0.05</wheel_radius>
+      <cmd_vel_topic>/cmd_vel</cmd_vel_topic>
+      <odom_topic>/odom</odom_topic>
+      <odom_frame>odom</odom_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+      <publish_wheel_joint_state>true</publish_wheel_joint_state>
+      <max_wheel_velocity>10.0</max_wheel_velocity>
+      <max_wheel_acceleration>5.0</max_wheel_acceleration>
+      <wheel_torque>10.0</wheel_torque>
+    </plugin>
+  </gazebo>
+
+  <!-- ========== CONTACT PROPERTIES ========== -->
+  <gazebo reference="aluminium_sheet">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>1e5</kp>
+    <kd>1000</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100.0</maxVel>
+    <material>Gazebo/WoodFloor</material>
+  </gazebo>
+
+  <gazebo reference="wheel_wheel">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>1e5</kp>
+    <kd>1000</kd>
+    <material>Gazebo/Wheel</material>
+  </gazebo>
+
+  <gazebo reference="wheel_2_wheel_2">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>1e5</kp>
+    <kd>1000</kd>
+    <material>Gazebo/Wheel</material>
+  </gazebo>
+
+  <gazebo reference="wheel_3_wheel_3">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>1e5</kp>
+    <kd>1000</kd>
+    <material>Gazebo/Wheel</material>
+  </gazebo>
+
+  <gazebo reference="wheel_4_wheel_4">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>1e5</kp>
+    <kd>1000</kd>
+    <material>Gazebo/Wheel</material>
+  </gazebo>
+
+
+  <!-- ====================================================== -->
+  <!-- ==================== TOF SENSORS ===================== -->
+  <!-- ====================================================== -->
+
+  <!-- FRONT -->
+  <gazebo reference="tof_front_link">
+    <sensor name="tof_front" type="gpu_lidar">
+      <always_on>true</always_on>
+      <update_rate>15</update_rate>
+      <visualize>true</visualize>
+
+      <topic>/tof/front</topic>
+
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </horizontal>
+        </scan>
+
+        <range>
+          <min>0.02</min>
+          <max>4.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+    </sensor>
+  </gazebo>
+
+  <!-- RIGHT -->
+  <gazebo reference="tof_right_link">
+    <sensor name="tof_right" type="gpu_lidar">
+      <always_on>true</always_on>
+      <update_rate>15</update_rate>
+      <visualize>true</visualize>
+
+      <topic>/tof/right</topic>
+
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </horizontal>
+        </scan>
+
+        <range>
+          <min>0.02</min>
+          <max>4.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+    </sensor>
+  </gazebo>
+
+  <!-- BACK -->
+  <gazebo reference="tof_back_link">
+    <sensor name="tof_back" type="gpu_lidar">
+      <always_on>true</always_on>
+      <update_rate>15</update_rate>
+      <visualize>true</visualize>
+
+      <topic>/tof/back</topic>
+
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </horizontal>
+        </scan>
+
+        <range>
+          <min>0.02</min>
+          <max>4.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+    </sensor>
+  </gazebo>
+
+  <!-- LEFT -->
+  <gazebo reference="tof_left_link">
+    <sensor name="tof_left" type="gpu_lidar">
+      <always_on>true</always_on>
+      <update_rate>15</update_rate>
+      <visualize>true</visualize>
+
+      <topic>/tof/left</topic>
+
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </horizontal>
+        </scan>
+
+        <range>
+          <min>0.02</min>
+          <max>4.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+    </sensor>
+  </gazebo>
+
+</robot>
